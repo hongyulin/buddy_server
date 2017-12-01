@@ -1,1 +1,4 @@
-import {  } from "./goods";
+import collectGood from "./goods";
+import collectUser from "./user";
+collectGood()
+collectUser()

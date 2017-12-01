@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import config from "config-lite";
 
-mongoose.connect(config.ure, {server: {auto_reconnect: true}});
+mongoose.connect(config.dbUrl, {server: {useMongoClient: true}});
 //把es6的promise给mongoose，解决其自身的promise没有catch问题
 mongoose.Promise = global.Promise;
 
@@ -18,7 +18,7 @@ db.on("error", (error) => {
 
 db.on("close", () => {
     console.log("数据库断开，重新连接中...");
-    mongoose.connect(config.url, {server: {auto_reconnect: true}});
+    mongoose.connect(config.dbUrl, {server: {auto_reconnect: true}});
 })
 
 export default db;
