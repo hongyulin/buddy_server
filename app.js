@@ -1,20 +1,20 @@
-import { express } from 'express';
-import { db } from "./mongodb/db.js";
+import express from 'express';
+import db from "./mongodb/db.js";
 // 管理config
-import { config } from "config-lite";
-import { router } from "./routes/index.js";
+import config from "config-lite";
+import router from "./routes/index.js";
 // 解析cookie
-import { cookieParser } from "cookie-parser";
-import { session } from "express-session";
-import { connectMongo } from "connect-mongo";
+import cookieParser from "cookie-parser";
+import session from "express-session";
+import connectMongo from "connect-mongo";
 // 记录日志
-import { winston } from "winston";
-import { expressWinston } from "express-winston";
-import { path } from "path";
+import winston from "winston";
+import expressWinston from "express-winston";
+import path from "path";
 // 处理单页面路由更自然
-import { history } from "connect-history-api-fallback";
+import history from "connect-history-api-fallback";
 // 统计请求数量
-import { statistic } from "./middlewares/statistic";
+import statistic from "./middlewares/statistic";
 
 const app = express();
 // 所有的路由都通过这个，添加头部。
