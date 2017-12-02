@@ -52,3 +52,8 @@ app.use(session({
         url: config.dbUrl
     })
 }))
+router(app);
+app.use(history());
+// express内置的，用于方便托管静态文件用的。
+app.use(express.static("./public"));
+app.listen(config.port)
