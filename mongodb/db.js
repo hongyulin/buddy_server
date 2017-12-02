@@ -13,7 +13,7 @@ db.once("open", () => {
 
 db.on("error", (error) => {
     console.error("数据库连接失败：", error);
-    mongoose.desconnect();
+    mongoose.disconnect();
 })
 
 db.on("close", () => {
