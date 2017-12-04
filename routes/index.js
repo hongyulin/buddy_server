@@ -1,5 +1,6 @@
 import login from "./login";
 
-export default {
+export default (app) => {
+    app.use('/login',login);
   
 }
