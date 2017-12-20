@@ -4,6 +4,7 @@ import mongoose from "mongoose"
 const schema = mongoose.Schema;
 
 const userInfoSchema = new Schema({
+    longitude: String,
 
 })
 
