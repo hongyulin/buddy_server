@@ -1,6 +1,6 @@
-import login from "./login";
+import user from "./user";
 
 export default (app) => {
-    app.use('/login',login);
+    app.use('/user', user);
   
 }
