@@ -1,5 +1,5 @@
-import user from "../models/sign/user"
-import userInfoModel from "../../models/sign/userInfo"
+import user from "../models/user"
+import userInfoModel from "../models/userInfo"
 // 加密
 import crypto from "crypto"
 // 时间格式化

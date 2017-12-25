@@ -4,7 +4,7 @@ import db from "./mongodb/db.js";
 import config from "config-lite";
 import router from "./routes/index.js";
 // 解析cookie
-import cookieParser from "cookie-parser";
+import cookieParse from "cookie-parser";
 import session from "express-session";
 import connectMongo from "connect-mongo";
 // 记录日志
@@ -32,7 +32,7 @@ app.all('*', (req, res, next) => {
     }
 });
 // 统计api
-app.use(statistic.apiRecord);
+// app.use(statistic.apiRecord);
 // session登录拦截，然后存入mongo
 const mongoSession = connectMongo(session);
 app.use(cookieParse());
