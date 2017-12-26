@@ -5,12 +5,20 @@ const Schema = mongoose.Schema;
 
 const userInfoSchema = new Schema({
     id: Number,
-    header_img: {type: String, default: "default.jpg"},
+    header_img: {type: String, default: "default_header.jpg"},
     name: String, 
     sex: String,
     age: Number,
     level: {type: Number, default: 1},
-    login_time: date,
+    step_Num: {type: Number, default: 0},
+    following: [
+        {
+            id: Number,
+            name: String,
+            header_img: {type: String, default: "default_header.jpg"}
+        },
+    ],
+    login_time: Date,
     longitude: String,
     latitude: String,
 
