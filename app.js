@@ -1,10 +1,11 @@
 import express from 'express';
 import db from "./mongodb/db.js";
 // 管理config
-import config from "config-lite";
+// import config from "config-lite";
+const config = require("config-lite")(__dirname)
 import router from "./routes/index.js";
 // 解析cookie
-import cookieParse from "cookie-parser";
+import cookieParser from "cookie-parser";
 import session from "express-session";
 import connectMongo from "connect-mongo";
 // 记录日志
@@ -35,25 +36,27 @@ app.all('*', (req, res, next) => {
 // app.use(statistic.apiRecord);
 // session登录拦截，然后存入mongo
 const mongoSession = connectMongo(session);
-app.use(cookieParse());
+app.use(cookieParser());
+console.log(config)
 app.use(session({
     // 设置cookie中，保存session的字段名称，
-    name: config.session.name,
+    name: config.default.session.name,
     // 通过设置secret字符串来计算hash来放在cookie中，使产生signedCookie放篡改。
-    secret: config.session.secret,
+    secret: config.default.session.secret,
     // 即使session没有修改也保存。
     resave: true,
     // 无论有没有session cookie，每次请求都设置个session cookie？
     saveUninitialized: false,
     // 存放session id的cookie的相关选项设置。
-    cookie: config.session.cookie,
+    cookie: config.default.session.cookie,
     // session的存储方式为mongodb
     store: new mongoSession({
-        url: config.dbUrl
+        url: config.default.dbUrl
     })
 }))
 router(app);
 app.use(history());
 // express内置的，用于方便托管静态文件用的。
 app.use(express.static("./public"));
-app.listen(config.port)
+
+app.listen(config.default.port)

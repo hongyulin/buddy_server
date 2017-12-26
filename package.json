@@ -4,7 +4,7 @@
   "author": "levinson",
   "private": true,
   "scripts": {
-    "start": "supervisor --harmony index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "babel": "^6.23.0",

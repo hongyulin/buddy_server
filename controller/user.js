@@ -16,6 +16,7 @@ class User extends Location {
 
     }
     async login(req, res, next){
+        res.send({test:"test"})
         const cap = req.cookie.cap;
         if(!cap){
             res.send({

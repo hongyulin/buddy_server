@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
-import config from "config-lite";
+const config = require("config-lite")(__dirname);
 
-mongoose.connect(config.dbUrl, {server: {useMongoClient: true}});
+mongoose.connect(config.default.dbUrl, {server: {useMongoClient: true}});
 //把es6的promise给mongoose，解决其自身的promise没有catch问题
 mongoose.Promise = global.Promise;
 
