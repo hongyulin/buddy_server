@@ -1,5 +1,5 @@
 import user from "../models/user"
-import userInfoModel from "../models/userInfo"
+import userInfo from "../models/userInfo"
 // 加密
 import crypto from "crypto"
 // 时间格式化
@@ -44,7 +44,7 @@ class User extends Location {
                 return
             }
             try{
-                const user = await userInfoModel.findOne({mobile});
+                const user = await userInfo.findOne({mobile});
 
             }catch(err){
                 res.send({

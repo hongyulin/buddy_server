@@ -1,5 +1,5 @@
-// 保存用户经纬度
-import mongoose from "mongoose"
+// 用户的相关信息。
+import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
@@ -19,9 +19,23 @@ const userInfoSchema = new Schema({
         },
     ],
     login_time: Date,
+    self_img: [
+        String
+    ],
+    exercise_time: Number,
+    fans: Number,
+    choice_num: Number,
     longitude: String,
     latitude: String,
+    circle: [
+        {
+            name: String,
+            header_img: String,
+            id: String,
+        }
+    ]
+});
 
-})
+const userInfo = mongoose.model('userInfo', userInfoSchema);
 
-const userInfo = mongoose.model('userInfo', userInfoSchema)
+export default userInfo;

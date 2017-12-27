@@ -1,1 +1,1 @@
-import userInfo from "../models/goods"
+import goods from "../models/goods"

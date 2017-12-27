@@ -1,1 +1,1 @@
-import userInfo from "../models/experience"
+import experience from "../models/experience"

@@ -1,1 +1,1 @@
-import userInfo from "../models/circle"
+import circle from "../models/circle"

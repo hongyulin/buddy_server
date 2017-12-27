@@ -1,10 +1,16 @@
-// 保存用户经纬度
-import mongoose from "mongoose"
+// show里小八精选热门话题
+import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-const userInfoSchema = new Schema({
+const topicSchema = new Schema({
+    id: Number,
+    title: String,
+    description: String,
+    header_img: String,
+    img: String,
+    partake: Number,
+});
 
-})
-
-const userInfo = mongoose.model('topic', userInfoSchema)
+const topic = mongoose.model('topic', topicSchema);
+export default topic;

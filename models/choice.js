@@ -1,10 +1,17 @@
-// 保存用户经纬度
-import mongoose from "mongoose"
+// 小八精选内容。
+import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-const userInfoSchema = new Schema({
+const choiceSchema = new Schema({
+    id: Number,
+    img: String,
+    header_img: String,
+    description: String,
+    name: String,
+    likes: Number,
+});
 
-})
+const choice = mongoose.model('choice', choiceSchema);
 
-const userInfo = mongoose.model('choice', userInfoSchema)
+export default choice;

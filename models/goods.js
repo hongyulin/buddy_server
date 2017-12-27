@@ -1,9 +1,9 @@
-// 保存用户经纬度
-import mongoose from "mongoose"
+// 商城中的商品
+import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-const userInfoSchema = new Schema({
+const goodsSchema = new Schema({
     id: Number,
     name: String,
     img: {type: String, default: "default_good.jpg"},
@@ -15,7 +15,8 @@ const userInfoSchema = new Schema({
         money: Number,
         send_num: Number,
     }
-    
-})
+});
 
-const userInfo = mongoose.model('goods', userInfoSchema)
+const goods = mongoose.model('goods', goodsSchema);
+
+export default goods;

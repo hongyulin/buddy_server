@@ -1,1 +1,1 @@
-import userInfo from "../models/topic"
+import topic from "../models/topic"

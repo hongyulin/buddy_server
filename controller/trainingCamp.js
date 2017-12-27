@@ -1,1 +1,0 @@
-import userInfo from "../models/trainingCamp"

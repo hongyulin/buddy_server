@@ -1,1 +1,1 @@
-import userInfo from "../models/choice"
+import choice from "../models/choice"
