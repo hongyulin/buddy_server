@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-const tendsSchema = new Schema({
+const trendsSchema = new Schema({
     id: String,
     description: String,
     img: [  

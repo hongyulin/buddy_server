@@ -1,7 +1,7 @@
 // 我的
 import mongoose from "mongoose";
 
-const Schema = mongooes.schema;
+const Schema = mongoose.Schema;
 
 const mineSchema = new Schema({
     id: Number,
@@ -18,5 +18,5 @@ const mineSchema = new Schema({
     
 });
 
-const mine = mongoose.model("mine", mineSchgema);
+const mine = mongoose.model("mine", mineSchema);
 export default mine;

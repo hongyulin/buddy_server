@@ -1,1 +1,1 @@
-import recommendUser from "../models/recommendUser"
+import recommendUser from "../models/recommend_user"

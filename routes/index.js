@@ -4,7 +4,7 @@ import level2 from "./level_two_page";
 
 export default (app) => {
     // 中间件，每个接口都要经过这个。
-    app.use('/level0', level0);
-    app.use('/level1', level1);
-    app.use('/level2', level2);
+    app.use('/api/level0', level0);
+    app.use('/api/level1', level1);
+    app.use('/api/level2', level2);
 }
