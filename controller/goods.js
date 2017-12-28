@@ -6,7 +6,7 @@ class Goods extends CommonFn{
         super();
     }
     test(req, res, next){
-        res.send({experience: "test"});
+        res.send({goods: "test"});
     }
 }
 

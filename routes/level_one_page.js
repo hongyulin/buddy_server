@@ -37,7 +37,7 @@ router.get("/recommend", Recommend.test);
 // 小八精选里面的热门话题
 router.get("/topic", Topic.test);
 // 获取我的圈子
-router.get("/mycircle", UserInfo.test);
+router.get("/mycircle", UserInfo.register);
 // 获取附近人
 // router.get("/nearperson", UserInfo.);
 
