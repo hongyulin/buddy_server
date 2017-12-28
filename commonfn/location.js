@@ -30,4 +30,6 @@ class Location extends CommonFn {
         })
     }
 
-}
+};
+
+export default Location;

@@ -8,7 +8,7 @@ import dtime from "time-formater"
 import formidable from "formidable"
 // 生成唯一id
 import uuid from "uuid"
-import Location from "../commonfn/commonFn"
+import Location from "../commonfn/location"
 
 class User extends Location {
     constructor(){

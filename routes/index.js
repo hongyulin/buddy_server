@@ -7,4 +7,4 @@ export default (app) => {
     app.use('/api/level0', level0);
     app.use('/api/level1', level1);
     app.use('/api/level2', level2);
-}
+};
