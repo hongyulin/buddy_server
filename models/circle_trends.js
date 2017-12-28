@@ -22,4 +22,4 @@ const trendsSchema = new Schema({
 
 const trends = mongoose.model('trends', trendsSchema);
 
-export default trends
+export default trends;

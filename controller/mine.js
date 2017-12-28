@@ -1,7 +1,7 @@
 import mine from "../models/mine";
 import CommonFn from "../commonfn/commonFn";
 
-class mine extends CommonFn{
+class Mine extends CommonFn{
     constructor(){
         super();
     }
@@ -10,4 +10,4 @@ class mine extends CommonFn{
     }
 }
 
-export default new mine();
+export default new Mine();

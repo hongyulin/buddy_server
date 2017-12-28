@@ -1,7 +1,7 @@
 import recommendUser from "../models/recommend_user";
 import CommonFn from "../commonfn/commonFn";
 
-class recommendUser extends CommonFn{
+class RecommendUser extends CommonFn{
     constructor(){
         super();
     }
@@ -10,4 +10,4 @@ class recommendUser extends CommonFn{
     }
 }
 
-export default new recommendUser();
+export default new RecommendUser();

@@ -1,7 +1,7 @@
 import topic from "../models/topic";
 import CommonFn from "../commonfn/commonFn";
 
-class topic extends CommonFn{
+class Topic extends CommonFn{
     constructor(){
         super();
     }
@@ -10,4 +10,4 @@ class topic extends CommonFn{
     }
 }
 
-export default new topic();
+export default new Topic();

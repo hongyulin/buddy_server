@@ -1,4 +1,4 @@
-import CommonFn from './commonFn'
+import CommonFn from './commonFn';
 
 class Location extends CommonFn {
     constructor(){
@@ -25,7 +25,7 @@ class Location extends CommonFn {
                     }
                 }
             }catch(err){
-                reject("定位失败")
+                reject("定位失败");
             }
         })
     }

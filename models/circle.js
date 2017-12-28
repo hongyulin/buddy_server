@@ -21,4 +21,4 @@ const circleSchema = new Schema({
 });
 
 const circle = mongoose.model('circle', circleSchema);
-export default circle
+export default circle;

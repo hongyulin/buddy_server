@@ -1,4 +1,4 @@
 import collectGood from "./goods";
 import collectUser from "./user";
-collectGood()
-collectUser()
+collectGood();
+collectUser();

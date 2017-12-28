@@ -4,7 +4,7 @@ import superagent from "superagent";
 import charset from "superagent-charset";
 import config from "config-lite";
 //解决编码问题。
-const superagentutf8 =  charset(superagent)
+const superagentutf8 =  charset(superagent);
 import mongoose from "mongoose";
 import goodCollection from "../models/goods";
 mongoose.connect(config.dbUrl);
@@ -15,7 +15,7 @@ export default {
         let reqUrlLength = 5;
         let reqUrl = [];
         for(let i = 0; i < reqUrlLength; i++) {
-            reqUrl.push()
+            reqUrl.push();
         }
     }
 } 

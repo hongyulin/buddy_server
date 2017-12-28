@@ -1,8 +1,8 @@
 // 验证码模块
-import captcha from "captchapng"
+import captcha from "captchapng";
 class Captcha {
     constructor(){
-
+        
     }
     async getCaptcha(req, res, next){
         let cap = parseInt(Math.random()*9000+1000);
@@ -18,4 +18,4 @@ class Captcha {
         });
     }
 }
-export default new Captcha()
+export default new Captcha();

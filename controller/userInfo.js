@@ -1,5 +1,5 @@
-import userInfo from "../models/userInfo"
-import CommonFn from "../commonfn/commonFn"
+import userInfo from "../models/userInfo";
+import CommonFn from "../commonfn/commonFn";
 
 class UserInfo extends CommonFn {
     constructor(){

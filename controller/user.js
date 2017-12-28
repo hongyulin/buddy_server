@@ -1,19 +1,18 @@
-import user from "../models/user"
-import userInfo from "../models/userInfo"
+import user from "../models/user";
+import userInfo from "../models/userInfo";
 // 加密
-import crypto from "crypto"
+import crypto from "crypto";
 // 时间格式化
-import dtime from "time-formater"
+import dtime from "time-formater";
 // 处理表单数据
-import formidable from "formidable"
+import formidable from "formidable";
 // 生成唯一id
-import uuid from "uuid"
-import Location from "../commonfn/location"
+import uuid from "uuid";
+import Location from "../commonfn/location";
 
 class User extends Location {
     constructor(){
-        super()
-
+        super();
     }
     async login(req, res, next){
         res.send({test:"test"})
@@ -68,4 +67,4 @@ class User extends Location {
     // }
 
 }
-export default new User()
+export default new User();

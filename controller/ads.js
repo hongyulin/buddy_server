@@ -5,7 +5,7 @@ class Ads extends CommonFn{
     constructor(){
         super();
     }
-    test(req, res, next){
+    async test(req, res, next){
         res.send({ads: "success"});
     }
 };

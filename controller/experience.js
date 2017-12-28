@@ -1,7 +1,7 @@
 import experience from "../models/experience";
 import CommonFn from "../commonfn/commonFn";
 
-class experience extends CommonFn{
+class Experience extends CommonFn{
     constructor(){
         super();
     }
@@ -10,4 +10,4 @@ class experience extends CommonFn{
     }
 }
 
-export default new experience();
+export default new Experience();
