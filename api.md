@@ -72,7 +72,8 @@ buddy_server的api文档
 > Http Method: Get
 > Content-Type: application/json
 > 请求字段：json
->>  
+>>  type: string
+>>
 > 响应字段：json
 >>
 
@@ -120,15 +121,6 @@ buddy_server的api文档
 
 
 ## show
-### 广告同上面。
-适应平台：app
-> Url: /api/level1/get/show/adimg
-> Http Method: Post
-> Content-Type: application/json
-> 请求字段：json
->>  
-> 响应字段：json
->>
 
 ###小八精选-经验
 适应平台：app
@@ -161,20 +153,10 @@ buddy_server的api文档
 > 响应字段：json
 >>
 
-### 同上广告
+### 小八动态-刚刚在练
 适应平台：app
-> Url: /api/level1/get/show/video
-> Http Method: Post
-> Content-Type: application/json
-> 请求字段：json
->>  
-> 响应字段：json
->>
-
-### 同上广告
-适应平台：app
-> Url: /api/level1/get/show/swiper
-> Http Method: Post
+> Url: /api/level1/recent/exercise
+> Http Method: Get
 > Content-Type: application/json
 > 请求字段：json
 >>  
