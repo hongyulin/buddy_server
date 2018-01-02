@@ -5,10 +5,10 @@ const Schema = mongoose.Schema;
 
 const choiceSchema = new Schema({
     id: Number,
+    name: String,
     img: String,
     header_img: String,
     description: String,
-    name: String,
     likes: Number,
 });
 

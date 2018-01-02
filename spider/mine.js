@@ -3,10 +3,10 @@ import cheerio from "cheerio";
 import superagent from "superagent";
 import charset from "superagent-charset";
 import config from "config-lite";
-//解决编码问题。
 const superagentutf8 =  charset(superagent);
 import mongoose from "mongoose";
 import Mine from "../models/mine";
+import uuid from "uuid";
 mongoose.connect(config.dbUrl);
 let ep = new eventproxy();
 let spider_url = config.spiderUrl;

@@ -1,6 +1,6 @@
 export default {
     dbUrl: 'mongodb://127.0.0.1:27017/buddy',
-    spiderUrl: '',
+    spiderUrl: 'http://tieba.baidu.com',
     port: 8989,
     session: {
         name: 'indentitykey',
