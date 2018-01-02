@@ -1,0 +1,25 @@
+import collectGood from "./goods";
+import collectUserInfo from "./userInfo";
+import collectAds from "./ads";
+import collectChoice from "./choice";
+import collectCircleTrend from "./circle_trends";
+import collectCircle from "./circle";
+import collectCourse from "./course";
+import collectExperience from "./experience";
+import collectMine from "./mine";
+import collectRecommend from "./recommend";
+import collectRecommendUser from "./recommend_user";
+import collectTopic from "./topic";
+
+collectGood();
+collectUserInfo();
+collectAds();
+collectChoice();
+collectCircleTrend();
+collectCircle();
+collectCourse();
+collectExperience();
+collectMine();
+collectRecommend();
+collectRecommendUser();
+collectTopic();

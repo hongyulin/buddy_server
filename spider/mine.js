@@ -6,16 +6,16 @@ import config from "config-lite";
 //解决编码问题。
 const superagentutf8 =  charset(superagent);
 import mongoose from "mongoose";
-import Good from "../models/goods";
+import Mine from "../models/mine";
 mongoose.connect(config.dbUrl);
 let ep = new eventproxy();
 let spider_url = config.spiderUrl;
 export default {
-    getGoods(){
+    getMines(){
         let reqUrlLength = 5;
         let reqUrl = [];
         for(let i = 0; i < reqUrlLength; i++) {
             reqUrl.push();
         }
     }
-} 
+}

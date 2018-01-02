@@ -6,12 +6,12 @@ import config from "config-lite";
 //解决编码问题。
 const superagentutf8 =  charset(superagent);
 import mongoose from "mongoose";
-import Good from "../models/goods";
+import RecommendUser from "../models/recommend_user";
 mongoose.connect(config.dbUrl);
 let ep = new eventproxy();
 let spider_url = config.spiderUrl;
 export default {
-    getGoods(){
+    getRecommendUser(){
         let reqUrlLength = 5;
         let reqUrl = [];
         for(let i = 0; i < reqUrlLength; i++) {
