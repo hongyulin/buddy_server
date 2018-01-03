@@ -1,21 +1,15 @@
-import eventproxy from "eventproxy";
-import cheerio from "cheerio";
-import superagent from "superagent";
-import charset from "superagent-charset";
-import config from "config-lite";
-const superagentutf8 =  charset(superagent);
-import mongoose from "mongoose";
-import Recommend from "../models/recommend";
 import uuid from "uuid";
-mongoose.connect(config.dbUrl);
-let ep = new eventproxy();
-let spider_url = config.spiderUrl;
-export default {
-    getRecommends(){
-        let reqUrlLength = 5;
-        let reqUrl = [];
-        for(let i = 0; i < reqUrlLength; i++) {
-            reqUrl.push();
-        }
+// 30
+export default [
+    {
+        id: uuid.v4(),
+        header_img: "",
+        title: String,
+        time: (new Date()).toISOString(),
+        img: "",
+        content: String,
+        likes: 23,
+        talk_num: 52,
+        share_num: 12,
     }
-} 
+]

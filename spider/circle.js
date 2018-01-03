@@ -1,21 +1,19 @@
-import eventproxy from "eventproxy";
-import cheerio from "cheerio";
-import superagent from "superagent";
-import charset from "superagent-charset";
-import config from "config-lite";
-const superagentutf8 =  charset(superagent);
-import mongoose from "mongoose";
-import Circle from "../models/circle";
 import uuid from "uuid";
-mongoose.connect(config.dbUrl);
-let ep = new eventproxy();
-let spider_url = config.spiderUrl;
-export default {
-    getCircles(){
-        let reqUrlLength = 5;
-        let reqUrl = [];
-        for(let i = 0; i < reqUrlLength; i++) {
-            reqUrl.push();
-        }
+export default [
+    {
+        id: String,
+        description: String,
+        address: String,
+        longitude: String,
+        latitude: String,
+        header_img: String,
+        name: String,
+        apply_people: [
+            {
+                name: String,
+                id: String,
+                header_img: String,
+            }
+        ],
     }
-} 
+]

@@ -1,4 +1,4 @@
-import uuid from "uuid"
+import uuid from "uuid";
 export default [
 {
     id: uuid.v4(),
