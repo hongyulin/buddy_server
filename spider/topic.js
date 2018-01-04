@@ -15,6 +15,6 @@ export default [
         description: "重新回到职场的时候，和老同事打招呼，差不多每人都会在'你回来啦！'的惊喜之后，目光立即就会转移到我的肚子上，接着补充一句'身材恢复的不错嘛！'。",
         header_img: "",
         img: "",
-        partake: 786,
+        partake: 251,
     }
 ]

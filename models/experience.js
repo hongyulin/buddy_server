@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const experienceSchema = new Schema({
-    id: Number,
+    id: String,
     img: String,
     header_img: String,
     title: String,

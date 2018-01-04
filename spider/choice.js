@@ -1,11 +1,12 @@
 import uuid from "uuid";
 export default [
-    {
-        id: Number,
-        name: String,
-        img: String,
-        header_img: String,
-        description: String,
-        likes: Number,
-    }
+{
+    id: uuid.v4(),
+    name: "骑士剪刀手",
+    img: "",
+    header_img: "",
+    description: "",
+    likes: 25,
+},
+
 ]

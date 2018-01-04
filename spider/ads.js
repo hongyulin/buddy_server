@@ -1,12 +1,13 @@
+import uuid from "uuid";
 export default [
     {
-        id: 1,
+        id: uuid.v4(),
         type:"levinson",
-        img:"default.jpg"
+        img:""
     },
     {
-        id: 2,
+        id: uuid.v4(),
         type:"linhongyu",
-        img:"default.jpg"
+        img:""
     }
 ]

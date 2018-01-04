@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const goodsSchema = new Schema({
-    id: Number,
+    id: String,
     name: String,
     img: {type: String, default: "default_good.jpg"},
     ori_price: Number,

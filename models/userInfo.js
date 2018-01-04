@@ -2,9 +2,9 @@
 import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
-
+// 粉丝数和following的人是相关联的。
 const userInfoSchema = new Schema({
-    id: Number,
+    id: String,
     header_img: {type: String, default: "default_header.jpg"},
     name: String, 
     sex: String,
@@ -13,7 +13,7 @@ const userInfoSchema = new Schema({
     step_Num: {type: Number, default: 0},
     following: [
         {
-            id: Number,
+            id: String,
             name: String,
             header_img: {type: String, default: "default_header.jpg"}
         },

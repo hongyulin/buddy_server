@@ -1,10 +1,10 @@
-// 我的
+// 我的,
 import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
 const mineSchema = new Schema({
-    id: Number,
+    id: String,
     header_img: {type: Number, default: "default_header.jpg"},
     fans: {type: Number, default: 0},
     following: {type: Number, default: 0},

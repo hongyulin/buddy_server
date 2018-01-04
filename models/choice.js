@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const choiceSchema = new Schema({
-    id: Number,
+    id: String,
     name: String,
     img: String,
     header_img: String,

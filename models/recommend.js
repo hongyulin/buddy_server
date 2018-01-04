@@ -4,9 +4,9 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const recommendSchema = new Schema({
-    id: Number,
+    id: String,
     header_img: String,
-    title: String,
+    name: String,
     time: Date,
     img: String,
     content: String,

@@ -5,11 +5,11 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const userInfoSchema = new Schema({
-    id: Number,
+    id: String,
     type: String,
     img: [{type: String, default: "default_add.jpg"}]
 });
 
-const ads = mongoose.model('goodAd', userInfoSchema);
+const ads = mongoose.model('ads', userInfoSchema);
 
 export default ads;

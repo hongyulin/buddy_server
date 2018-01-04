@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const recommendUserSchema = new Schema({
-    id: Number,
+    id: String,
     header_img: String,
     name: String,
     host_num: {type: Number, default: 0},

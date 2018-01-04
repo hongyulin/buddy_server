@@ -6,6 +6,7 @@ const Schema = mongoose.Schema;
 const circleSchema = new Schema({
     id: String,
     description: String,
+    img: [String],
     address: String,
     longitude: String,
     latitude: String,
