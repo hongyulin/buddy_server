@@ -2,7 +2,7 @@ import uuid from "uuid";
 export default [
 {
     id: uuid.v4(),
-    description: "",
+    description: "南京也下雪了，好大的雪!",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -16,7 +16,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "2018，想得到的都需要努力！",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -30,7 +30,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "为什么吃完饭4个小时了肚子放松状态下还那么大",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -44,7 +44,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "有没有推荐推荐比较准的心率手环的，淘宝上的小米手环之类的怎么样",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -58,7 +58,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "太胖了，越来越胖了，所以必须减肥！",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -72,7 +72,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "练成这样得几年",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -86,7 +86,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "你不竭斯底里精疲力尽，怎么才能破茧成蝶磐涅重生？",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -100,7 +100,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "不努力的女人只有两种结果，穿不完的地摊货和逛不完的菜市场。",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -114,7 +114,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "为了女人！",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -128,7 +128,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "Nothing is impossible",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -142,7 +142,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "身材好了可以买好多好看的衣服~",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -156,7 +156,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "世界充满罪恶，只有自己强大，才能生存。",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -170,7 +170,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "我之所以这么坚持做我曾难以坚持的事情，只不过是为了放弃治疗",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -184,7 +184,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "不忘初心，方得始终",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -198,7 +198,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "You train to look good,I train to kick your ass",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -212,7 +212,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "多做一个就有更大可能泡到妞了，加油，在一个",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -226,7 +226,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "现在不玩命，将来命玩你",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -240,7 +240,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "你不竭斯底里精疲力尽，怎么才能破茧成蝶磐涅重生？",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -254,7 +254,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "要想人前显贵、必须人后受罪 原谅我的复制无罪",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -268,7 +268,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "每次当我踏进健身房 我的兽性又回来了",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -282,7 +282,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "努力是奇迹的另一个代名词！",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -296,7 +296,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "在健身的道路上必然会孤单、但这就是你成为少部分成功者的原因！",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -310,7 +310,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "引用施瓦辛格的:我热爱痛苦",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -324,7 +324,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "成功要想走捷径、那你就得就99%的人没有的毅力、付出99%的人都付出不了的努力！",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -338,7 +338,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "忍受的痛苦越多就证明你离自己的梦想越近！",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -352,7 +352,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "当一个人像哮喘时渴望呼吸一样的渴望成功，没有什么可以阻挡他成功。",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -366,7 +366,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "经历了多少决定了他有多少斤两！",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -380,7 +380,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "其实很多时候我都会想些励志的语言激励自己前进！这就是自勉！",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
@@ -408,7 +408,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    description: "",
+    description: "我要走属于我自己的忍道，一直向前走，不放弃。-——火影",
     img: ["", "", "",],
     address: "上海张江",
     longitude: "",
