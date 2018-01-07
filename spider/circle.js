@@ -7,7 +7,7 @@ export default [
     address: "上海华师大",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/eaf8ac10.jpg",
     name: "聚贤羽毛球圈",
     apply_people: [
         {
@@ -24,7 +24,7 @@ export default [
     address: "上海龙吴路",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
     name: "	悠悠和他的朋友们羽毛球圈",
     apply_people: [
         {
@@ -41,7 +41,7 @@ export default [
     address: "上海浦东大道",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/edc5a7c3.jpg",
     name: "	上海乒乓球室",
     apply_people: [
         {
@@ -58,7 +58,7 @@ export default [
     address: "上海八佰伴",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
     name: "我们的运动",
     apply_people: [
         {
@@ -75,7 +75,7 @@ export default [
     address: "上海华师大",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/b6bdd829.jpg",
     name: "	浦东网球家园",
     apply_people: [
         {
@@ -92,7 +92,7 @@ export default [
     address: "上海打浦桥",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
     name: "	上海铁汉足球队－欢迎大家！",
     apply_people: [
         {
@@ -109,7 +109,7 @@ export default [
     address: "上海鲁班路",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/65b3322d.jpg",
     name: "	轻体育休闲运动圈",
     apply_people: [
         {
@@ -126,7 +126,7 @@ export default [
     address: "上海东方医院",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/718acc33.jpg",
     name: "	美女俱乐部-热爱瑜伽运动者",
     apply_people: [
         {
@@ -143,7 +143,7 @@ export default [
     address: "上海和平饭店",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/7ccbc251.jpg",
     name: "	老南市新黄浦乒乓活动中心",
     apply_people: [
         {
@@ -160,7 +160,7 @@ export default [
     address: "上海江宁路",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/7f8b1039.jpg",
     name: "	上海飞思拓游泳圈",
     apply_people: [
         {
@@ -177,7 +177,7 @@ export default [
     address: "上海博物馆",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/813fc610.jpg",
     name: "	后唐时代",
     apply_people: [
         {
@@ -194,7 +194,7 @@ export default [
     address: "上海静安寺",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/81b4ca310.jpg",
     name: "	威尔士健身会所",
     apply_people: [
         {
@@ -211,7 +211,7 @@ export default [
     address: "上海南京西路",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/83849679.jpg",
     name: "聚贤羽毛球圈",
     apply_people: [
         {
@@ -228,7 +228,7 @@ export default [
     address: "上海华师大",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/86011b35.jpg",
     name: "	篮球狂飙公园俱乐部",
     apply_people: [
         {
@@ -245,7 +245,7 @@ export default [
     address: "上海陆家嘴",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/8785cc76.jpg",
     name: "	玩酷上海★玩酷中国",
     apply_people: [
         {
@@ -262,7 +262,7 @@ export default [
     address: "上海华师大",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/8cbc4863.jpg",
     name: "	上海沃德网球运动俱乐部",
     apply_people: [
         {
@@ -279,7 +279,7 @@ export default [
     address: "上海世纪公园",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/8e7be36a.jpg",
     name: "	菩提羽毛球大联盟",
     apply_people: [
         {
@@ -296,7 +296,7 @@ export default [
     address: "上海世纪大道",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/8edc278e.jpg",
     name: "	赵堡太极拳",
     apply_people: [
         {
@@ -313,7 +313,7 @@ export default [
     address: "上海华师大",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/9b422925.jpg",
     name: "	上海连珠五子棋俱乐部",
     apply_people: [
         {
@@ -330,7 +330,7 @@ export default [
     address: "上海广兰路",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/a19c7c12.jpg",
     name: "	中西文化交流",
     apply_people: [
         {
@@ -347,7 +347,7 @@ export default [
     address: "上海龙阳路",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/8504b7bd.jpg",
     name: "	浦东舞蹈爱好者",
     apply_people: [
         {
@@ -364,7 +364,7 @@ export default [
     address: "上海静安区",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/bda33ca2.jpg",
     name: "	华东政法大学国际标准舞协会IDSA",
     apply_people: [
         {
@@ -381,7 +381,7 @@ export default [
     address: "上海浦东新区",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/c0170a12.jpg",
     name: "	燃烧的地板-----拉丁",
     apply_people: [
         {
@@ -397,7 +397,7 @@ export default [
     address: "上海张江",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/c17aa585.jpg",
     name: "	羽驿（北区）羽毛球俱乐部（普陀闸北虹口）",
     img: ["", "", ""],
     apply_people: [
@@ -415,7 +415,7 @@ export default [
     address: "上海 张江",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/c500fa210.jpg",
     name: "	浦东中学每周六羽毛球俱乐部",
     apply_people: [
         {
@@ -432,7 +432,7 @@ export default [
     address: "上海 张江",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/cb4a0e6d.jpg",
     name: "	情迷桌上足球俱乐部",
     apply_people: [
         {
@@ -449,7 +449,7 @@ export default [
     address: "上海 张江",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/cdf78435.jpg",
     name: "	红叶羽毛球会",
     apply_people: [
         {
@@ -466,7 +466,7 @@ export default [
     address: "上海华师大",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/cf256362.jpg",
     name: "	上海时尚圈【体育运动大联盟】",
     apply_people: [
         {
@@ -483,7 +483,7 @@ export default [
     address: "上海张江高科路",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
     name: "	第19大街",
     apply_people: [
         {
@@ -500,7 +500,7 @@ export default [
     address: "上海张江",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/eaf8ac10.jpg",
     name: "	it人士的篮球俱乐部",
     apply_people: [
         {

@@ -2,7 +2,7 @@ import uuid from "uuid";
 export default [
 {
     id: uuid.v4(),
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/bd0986cc.jpg",
     name: "倒下的金针菇",
     host_num: Math.floor(Math.random()*50),
     activity_host: Math.floor(Math.random()*100),
@@ -14,7 +14,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/bda33ca2.jpg",
     name: "尚厉GDthings",
     host_num: Math.floor(Math.random()*50),
     activity_host: Math.floor(Math.random()*100),
@@ -26,7 +26,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/c00f7765.jpg",
     name: "小风Grass",
     host_num: Math.floor(Math.random()*50),
     activity_host: Math.floor(Math.random()*100),
@@ -38,7 +38,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/c0170a12.jpg",
     name: "lalala1234917",
     host_num: Math.floor(Math.random()*50),
     activity_host: Math.floor(Math.random()*100),
@@ -50,7 +50,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/c0f3ba36.jpg",
     name: "想个ID有多难",
     host_num: Math.floor(Math.random()*50),
     activity_host: Math.floor(Math.random()*100),
@@ -62,7 +62,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/c17aa585.jpg",
     name: "CAs",
     host_num: Math.floor(Math.random()*50),
     activity_host: Math.floor(Math.random()*100),
@@ -74,7 +74,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/c2ae4b64.jpg",
     name: "最爱fgh578",
     host_num: Math.floor(Math.random()*50),
     activity_host: Math.floor(Math.random()*100),
@@ -86,7 +86,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/c500fa210.jpg",
     name: "听风吟酒",
     host_num: Math.floor(Math.random()*50),
     activity_host: Math.floor(Math.random()*100),
@@ -98,7 +98,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/cb4a0e6d.jpg",
     name: "掠夬",
     host_num: Math.floor(Math.random()*50),
     activity_host: Math.floor(Math.random()*100),
@@ -110,7 +110,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/cdf78435.jpg",
     name: "世界末丶君子楠",
     host_num: Math.floor(Math.random()*50),
     activity_host: Math.floor(Math.random()*100),
@@ -122,7 +122,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/cf256362.jpg",
     name: "我是个地痞人渣",
     host_num: Math.floor(Math.random()*50),
     activity_host: Math.floor(Math.random()*100),
@@ -134,7 +134,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
     name: "段子加工坊",
     host_num: Math.floor(Math.random()*50),
     activity_host: Math.floor(Math.random()*100),
@@ -146,7 +146,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/d3f0f6aa.jpg",
     name: "Grouti",
     host_num: Math.floor(Math.random()*50),
     activity_host: Math.floor(Math.random()*100),
@@ -158,7 +158,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/edc5a7c3.jpg",
     name: "清纯de小骚年",
     host_num: Math.floor(Math.random()*50),
     activity_host: Math.floor(Math.random()*100),
@@ -170,7 +170,7 @@ export default [
 },
 {
     id: uuid.v4(),
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/eaf8ac10.jpg",
     name: "枙子花开",
     host_num: Math.floor(Math.random()*50),
     activity_host: Math.floor(Math.random()*100),
