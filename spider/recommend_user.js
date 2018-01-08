@@ -10,7 +10,11 @@ export default [
     exercise_time: Math.floor(Math.random()*500),
     fans_num: Math.floor(Math.random()*50),
     choice_num: Math.floor(Math.random()*10),
-    img: ["", "", ""],
+    img: [
+        "http://p24gz1y6y.bkt.clouddn.com/1515214918504.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214990580.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214965751.jpg",
+    ],
 },
 {
     id: uuid.v4(),
@@ -22,7 +26,11 @@ export default [
     exercise_time: Math.floor(Math.random()*500),
     fans_num: Math.floor(Math.random()*50),
     choice_num: Math.floor(Math.random()*10),
-    img: ["", "", ""],
+    img: [
+        "http://p24gz1y6y.bkt.clouddn.com/1515214939326.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214946533.jpg",
+        "http://p24gz1y6y.bkt.clouddn.com/1515214987377.jpg", 
+    ],
 },
 {
     id: uuid.v4(),
@@ -34,7 +42,11 @@ export default [
     exercise_time: Math.floor(Math.random()*500),
     fans_num: Math.floor(Math.random()*50),
     choice_num: Math.floor(Math.random()*10),
-    img: ["", "", ""],
+    img: [
+        "http://p24gz1y6y.bkt.clouddn.com/1515214944931.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214975365.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214943330.jpg",
+    ],
 },
 {
     id: uuid.v4(),
@@ -46,7 +58,11 @@ export default [
     exercise_time: Math.floor(Math.random()*500),
     fans_num: Math.floor(Math.random()*50),
     choice_num: Math.floor(Math.random()*10),
-    img: ["", "", ""],
+    img: [
+        "http://p24gz1y6y.bkt.clouddn.com/1515214952138.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214952938.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214982572.jpg",
+    ],
 },
 {
     id: uuid.v4(),
@@ -58,7 +74,11 @@ export default [
     exercise_time: Math.floor(Math.random()*500),
     fans_num: Math.floor(Math.random()*50),
     choice_num: Math.floor(Math.random()*10),
-    img: ["", "", ""],
+    img: [
+        "http://p24gz1y6y.bkt.clouddn.com/1515214958545.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214959346.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214962548.jpg",
+    ],
 },
 {
     id: uuid.v4(),
@@ -70,7 +90,11 @@ export default [
     exercise_time: Math.floor(Math.random()*500),
     fans_num: Math.floor(Math.random()*50),
     choice_num: Math.floor(Math.random()*10),
-    img: ["", "", ""],
+    img: [
+        "http://p24gz1y6y.bkt.clouddn.com/1515214964149.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214969757.jpg",
+        "http://p24gz1y6y.bkt.clouddn.com/1515214980171.jpg",
+    ],
 },
 {
     id: uuid.v4(),
@@ -82,7 +106,11 @@ export default [
     exercise_time: Math.floor(Math.random()*500),
     fans_num: Math.floor(Math.random()*50),
     choice_num: Math.floor(Math.random()*10),
-    img: ["", "", ""],
+    img: [
+        "http://p24gz1y6y.bkt.clouddn.com/1515214928116.jpg",
+        "http://p24gz1y6y.bkt.clouddn.com/1515214924109.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214927315.jpg",
+    ],
 },
 {
     id: uuid.v4(),
@@ -94,7 +122,11 @@ export default [
     exercise_time: Math.floor(Math.random()*500),
     fans_num: Math.floor(Math.random()*50),
     choice_num: Math.floor(Math.random()*10),
-    img: ["", "", ""],
+    img: [
+        "http://p24gz1y6y.bkt.clouddn.com/1515214928916.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214924109.jpg",
+        "http://p24gz1y6y.bkt.clouddn.com/1515214924914.jpg",
+    ],
 },
 {
     id: uuid.v4(),
@@ -106,7 +138,11 @@ export default [
     exercise_time: Math.floor(Math.random()*500),
     fans_num: Math.floor(Math.random()*50),
     choice_num: Math.floor(Math.random()*10),
-    img: ["", "", ""],
+    img: [
+        "http://p24gz1y6y.bkt.clouddn.com/1515214926515.jpg",
+        "http://p24gz1y6y.bkt.clouddn.com/1515214947334.jpg",  
+        "http://p24gz1y6y.bkt.clouddn.com/1515214929717.jpg",
+    ],
 },
 {
     id: uuid.v4(),
@@ -118,7 +154,11 @@ export default [
     exercise_time: Math.floor(Math.random()*500),
     fans_num: Math.floor(Math.random()*50),
     choice_num: Math.floor(Math.random()*10),
-    img: ["", "", ""],
+    img: [
+        "http://p24gz1y6y.bkt.clouddn.com/1515214936122.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214939326.jpg",
+        "http://p24gz1y6y.bkt.clouddn.com/1515214986576.jpg",
+    ],
 },
 {
     id: uuid.v4(),
@@ -130,7 +170,11 @@ export default [
     exercise_time: Math.floor(Math.random()*500),
     fans_num: Math.floor(Math.random()*50),
     choice_num: Math.floor(Math.random()*10),
-    img: ["", "", ""],
+    img: [
+        "http://p24gz1y6y.bkt.clouddn.com/1515214940127.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214976967.jpg",
+        "http://p24gz1y6y.bkt.clouddn.com/1515214984174.jpg",
+    ],
 },
 {
     id: uuid.v4(),
@@ -142,7 +186,11 @@ export default [
     exercise_time: Math.floor(Math.random()*500),
     fans_num: Math.floor(Math.random()*50),
     choice_num: Math.floor(Math.random()*10),
-    img: ["", "", ""],
+    img: [
+        "http://p24gz1y6y.bkt.clouddn.com/1515214948134.jpg",
+        "http://p24gz1y6y.bkt.clouddn.com/1515214975365.jpg",  
+        "http://p24gz1y6y.bkt.clouddn.com/1515214949736.jpg", 
+    ],
 },
 {
     id: uuid.v4(),
@@ -154,7 +202,11 @@ export default [
     exercise_time: Math.floor(Math.random()*500),
     fans_num: Math.floor(Math.random()*50),
     choice_num: Math.floor(Math.random()*10),
-    img: ["", "", ""],
+    img: [
+        "http://p24gz1y6y.bkt.clouddn.com/1515214972159.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214952138.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214954539.jpg",
+    ],
 },
 {
     id: uuid.v4(),
@@ -166,7 +218,11 @@ export default [
     exercise_time: Math.floor(Math.random()*500),
     fans_num: Math.floor(Math.random()*50),
     choice_num: Math.floor(Math.random()*10),
-    img: ["", "", ""],
+    img: [
+        "http://p24gz1y6y.bkt.clouddn.com/1515214956143.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214958545.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214967354.jpg",
+    ],
 },
 {
     id: uuid.v4(),
@@ -178,7 +234,11 @@ export default [
     exercise_time: Math.floor(Math.random()*500),
     fans_num: Math.floor(Math.random()*50),
     choice_num: Math.floor(Math.random()*10),
-    img: ["", "", ""],
+    img: [
+        "http://p24gz1y6y.bkt.clouddn.com/1515214932920.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214936923.jpg", 
+        "http://p24gz1y6y.bkt.clouddn.com/1515214916103.jpg",
+    ],
 },
 
 ]
