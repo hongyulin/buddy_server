@@ -4,15 +4,15 @@ mongoose.connect(config.default.dbUrl, {server: {useMongoClient: true}});
 import collectGood from "./goods";
 import collectUserInfo from "./userInfo";
 import collectAds from "./ads";
-// import collectChoice from "./choice";
-// import collectCircleTrend from "./circle_trends";
+import collectChoice from "./choice";
+import collectCircleTrend from "./circle_trends";
 import collectCircle from "./circle";
 import collectCourse from "./course";
 import collectExperience from "./experience";
-// import collectMine from "./mine";
 import collectRecommend from "./recommend";
 import collectRecommendUser from "./recommend_user";
 import collectTopic from "./topic";
+
 import AdsModel from "../models/ads"
 import RecommendModel from "../models/recommend"
 import UserInfoModel from "../models/userInfo"
@@ -22,7 +22,10 @@ import GoodsModel from "../models/goods"
 import ExperienceModel from "../models/experience"
 import CourseModel from "../models/course"
 import CircleModel from "../models/circle"
-// collectGood();
+import ChoiceModel from "../models/choice"
+import CircleTrendsModel from "../models/circle_trends"
+
+
 collectAds.forEach((item) => {
     AdsModel.create(item)
 });
@@ -50,13 +53,9 @@ collectCourse.forEach((item) => {
 collectCircle.forEach((item) => {
     CircleModel.create(item)
 });
-// collectAds();
-// collectChoice();
-// collectCircleTrend();
-// collectCircle();
-// collectCourse();
-// collectExperience();
-// collectMine();
-// collectRecommend();
-// collectRecommendUser();
-// collectTopic();
+collectChoice.forEach((item) => {
+    ChoiceModel.create(item)
+});
+collectCircleTrend.forEach((item) => {
+    CircleTrendsModel.create(item)
+});
