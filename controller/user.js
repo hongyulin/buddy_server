@@ -15,7 +15,7 @@ class User extends Location {
         super();
     }
     async login(req, res, next){
-        res.send({test:"test"})
+        // res.send({test:"test"})
         const cap = req.cookie.cap;
         if(!cap){
             res.send({
@@ -44,7 +44,6 @@ class User extends Location {
             }
             try{
                 const user = await userInfo.findOne({mobile});
-
             }catch(err){
                 res.send({
                     status: 0,
