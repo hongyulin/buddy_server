@@ -7,6 +7,7 @@ const userInfoSchema = new Schema({
     id: String,
     header_img: {type: String, default: "default_header.jpg"},
     name: String, 
+    mobile: String,
     sex: String,
     age: Number,
     level: {type: Number, default: 1},
@@ -25,6 +26,7 @@ const userInfoSchema = new Schema({
     exercise_time: Number,
     fans: Number,
     choice_num: Number,
+    city: String,
     longitude: String,
     latitude: String,
     circle: [

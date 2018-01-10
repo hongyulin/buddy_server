@@ -7,7 +7,11 @@ class Location extends CommonFn {
     }
     async getPosition(req){
         return new Promise(async (resolve, reject) => {
-            let ip = req.header["x-forwarded-for"];
+            let ip = req.headers['x-forwarded-for'] || 
+            req.connection.remoteAddress || 
+            req.socket.remoteAddress ||
+            req.connection.socket.remoteAddress;
+            
             let ipList = ip.split(":");
             ip = ipList.pop();
             if(process.env.NODE_ENV == "development"){
@@ -23,6 +27,7 @@ class Location extends CommonFn {
                     let cityInfo = {
                         city: result.content.address_detail.city,
                     }
+                    resolve(cityInfo);
                 }
             }catch(err){
                 reject("定位失败");

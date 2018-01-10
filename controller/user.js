@@ -13,25 +13,17 @@ import Location from "../commonfn/location";
 class User extends Location {
     constructor(){
         super();
+        this.login = this.login.bind(this);
     }
     async login(req, res, next){
         // res.send({test:"test"})
-        const cap = req.cookie.cap;
-        if(!cap){
-            res.send({
-                status: 0,
-                type: "ERROR_CAP",
-                message: "验证码失效"
-            })
-            return 
-        }
         const form = new formidable.IncomingForm();
-        form.parse(req, async (err, field, files) => {
+        form.parse(req, async (err, fields, files) => {
             const {mobile, captchaCode} = fields;
             try{
                 if(!mobile){
                     throw new Error("手机参数错误");
-                }else if(!captchaCode || cap.toString() !== captchaCode.toString()){
+                }else if(!captchaCode){
                     throw new Error("验证码参数错误");
                 }
             }catch(err){
@@ -43,7 +35,22 @@ class User extends Location {
                 return
             }
             try{
-                const user = await userInfo.findOne({mobile});
+                const userDetail = await user.findOne({mobile});
+                if(!userDetail){
+                    let user_id = uuid.v4();
+                    const newUser = {mobile, id: user_id};
+                    const login_time = (new Date()).getTime();
+                    const cityInfo = await this.getPosition(req);
+                    const newUserInfo = {name: mobile, id: user_id, login_time, city: cityInfo.city};
+                    user.create(newUser);
+                    userInfo.create(newUserInfo);
+                    // req.session.user_id = user_id;
+                    res.send({newUserInfo});
+                }else{
+                    // res.session.user_id = userDetail.id;
+                    const userInfoDetail = await userInfo.findOne({id: userDetail.id});
+                    res.send(userInfoDetail);
+                }
             }catch(err){
                 res.send({
                     status: 0,
