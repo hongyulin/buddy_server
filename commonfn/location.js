@@ -19,10 +19,12 @@ class Location extends CommonFn {
             }
             try{
                 let result;
-                result = await this.fetch("https://api.map.baidu.com/location/ip", {
+                // resolve(ip)
+                result = await fetch("https://api.map.baidu.com/location/ip", {
                     ip,
                     AK: this.baiduak
-                })
+                });
+                
                 if(result.status == 0){
                     let cityInfo = {
                         city: result.content.address_detail.city,

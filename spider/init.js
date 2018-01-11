@@ -28,42 +28,42 @@ import CircleTrendsModel from "../models/circle_trends";
 import UserModel from "../models/user";
 
 
-// collectAds.forEach((item) => {
-//     AdsModel.create(item);
-// });
-// collectRecommend.forEach((item) => {
-//     RecommendModel.create(item);
-// });
+collectAds.forEach((item) => {
+    AdsModel.create(item);
+});
+collectRecommend.forEach((item) => {
+    RecommendModel.create(item);
+});
 
-// collectUserInfo.forEach((item) => {
-//     UserInfoModel.create(item);
-// });
+collectUserInfo.forEach((item) => {
+    UserInfoModel.create(item);
+});
 
 user.forEach((item) => {
     UserModel.create(item);
 });
 
-// collectTopic.forEach((item) => {
-//     TopicModel.create(item);
-// });
-// collectRecommendUser.forEach((item) => {
-//     RecommendUserModel.create(item);
-// });
-// collectGood.forEach((item) => {
-//     GoodsModel.create(item);
-// });
-// collectExperience.forEach((item) => {
-//     ExperienceModel.create(item);
-// });
-// collectCourse.forEach((item) => {
-//     CourseModel.create(item);
-// });
-// collectCircle.forEach((item) => {
-//     CircleModel.create(item);
-// });
-// collectChoice.forEach((item) => {
-//     ChoiceModel.create(item);
-// });
-// collectCircleTrend.forEach((item) => {
-//     CircleTrendsModel.create(item);
-// });
+collectTopic.forEach((item) => {
+    TopicModel.create(item);
+});
+collectRecommendUser.forEach((item) => {
+    RecommendUserModel.create(item);
+});
+collectGood.forEach((item) => {
+    GoodsModel.create(item);
+});
+collectExperience.forEach((item) => {
+    ExperienceModel.create(item);
+});
+collectCourse.forEach((item) => {
+    CourseModel.create(item);
+});
+collectCircle.forEach((item) => {
+    CircleModel.create(item);
+});
+collectChoice.forEach((item) => {
+    ChoiceModel.create(item);
+});
+collectCircleTrend.forEach((item) => {
+    CircleTrendsModel.create(item);
+});

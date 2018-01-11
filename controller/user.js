@@ -16,7 +16,6 @@ class User extends Location {
         this.login = this.login.bind(this);
     }
     async login(req, res, next){
-        // res.send({test:"test"})
         const form = new formidable.IncomingForm();
         form.parse(req, async (err, fields, files) => {
             const {mobile, captchaCode} = fields;
@@ -46,6 +45,7 @@ class User extends Location {
                     userInfo.create(newUserInfo);
                     // req.session.user_id = user_id;
                     res.send({newUserInfo});
+                    // location中的fetch有问题！       
                 }else{
                     // res.session.user_id = userDetail.id;
                     const userInfoDetail = await userInfo.findOne({id: userDetail.id});
@@ -58,8 +58,6 @@ class User extends Location {
                     message: "登录失败"
                 })
             }
-            
-
         })
     }
     // 密码登录去掉，每次都用手机验证码登录。
