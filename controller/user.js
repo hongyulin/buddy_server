@@ -18,11 +18,11 @@ class User extends Location {
     async login(req, res, next){
         const form = new formidable.IncomingForm();
         form.parse(req, async (err, fields, files) => {
-            const {mobile, captchaCode} = fields;
+            const {mobile, idCode} = fields;
             try{
                 if(!mobile){
                     throw new Error("手机参数错误");
-                }else if(!captchaCode){
+                }else if(!idCode){
                     throw new Error("验证码参数错误");
                 }
             }catch(err){
@@ -40,16 +40,14 @@ class User extends Location {
                     const newUser = {mobile, id: user_id};
                     const login_time = (new Date()).getTime();
                     const cityInfo = await this.getPosition(req);
-                    const newUserInfo = {name: mobile, id: user_id, login_time, city: cityInfo.city};
+                    const newUserInfo = {name: mobile, id: user_id, login_time, city: cityInfo};
                     user.create(newUser);
                     userInfo.create(newUserInfo);
-                    // req.session.user_id = user_id;
-                    res.send({newUserInfo});
+                    res.send({"status": "success", "userInfo": newUserInfo});
                     // location中的fetch有问题！       
                 }else{
-                    // res.session.user_id = userDetail.id;
                     const userInfoDetail = await userInfo.findOne({id: userDetail.id});
-                    res.send(userInfoDetail);
+                    res.send({"status": "success", "userInfo": userInfoDetail});
                 }
             }catch(err){
                 res.send({

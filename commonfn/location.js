@@ -1,4 +1,5 @@
 import CommonFn from './commonFn';
+import fetch from "node-fetch";
 
 class Location extends CommonFn {
     constructor(){
@@ -18,19 +19,12 @@ class Location extends CommonFn {
                 ip = "180.173.33.7"
             }
             try{
-                let result;
-                // resolve(ip)
-                result = await fetch("https://api.map.baidu.com/location/ip", {
-                    ip,
-                    AK: this.baiduak
-                });
-                
-                if(result.status == 0){
-                    let cityInfo = {
-                        city: result.content.address_detail.city,
-                    }
-                    resolve(cityInfo);
-                }
+                fetch("https://api.map.baidu.com/location/ip?ip=" + ip + "&ak=Ch5SXX8WxKMsN5DGddOjGIh7v5vlG6zK")
+                    .then(res => {
+                        return res.json();
+                    }).then( body =>{
+                        resolve(body.content.address);
+                    })
             }catch(err){
                 reject("定位失败");
             }
