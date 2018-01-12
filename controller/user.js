@@ -58,6 +58,7 @@ class User extends Location {
             }
         })
     }
+    
     // 密码登录去掉，每次都用手机验证码登录。
     // cryptoPw_(pw){
     //     const cryptopw = this.sha1_(this.sha1_(pw).slice(1,5) + this.sha1_(pw));

@@ -2,13 +2,17 @@ import fetch from "node-fetch";
 import formidable from "formidable";
 import path from "path";
 import fs from "fs";
-// 对图片剪切缩放
 import gm from "gm";
 import uuid from "uuid";
+import qiniu from "qiniu";
+
+qiniu.conf.ACCESS_KEY = "46X3X9Z4juBc-eo_6xC9yBrPxavTjEpB6w-UDV6w";
+qiniu.conf.SECRET_KEY = "JgDhksH7oz8wfG2-euOzj5keRbYAbc9Pbo_q__6t";
 
 export default class CommonFn {
     constructor() {
         this.uploadImg = this.uploadImg.bind(this);
+        this.qiniu = this.qiniu.bind(this);
     }
     async uploadImg(req, res, next) {
         let type = res.params.type;
@@ -54,6 +58,9 @@ export default class CommonFn {
                 }
             })
         })
+    }
+    async qiniu(){
+        
     }
 
 }
