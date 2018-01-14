@@ -2,8 +2,8 @@
 import express from "express";
 import User from "../controller/user";
 import UserInfo from "../controller/userInfo";
-import commonFn from "../commonfn/commonFn";
-const commonFn = new commonFn();
+import CommonFn from "../commonfn/commonFn";
+const commonFn = new CommonFn();
 
 
 const router = express.Router();
