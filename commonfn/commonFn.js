@@ -6,8 +6,9 @@ import gm from "gm";
 import uuid from "uuid";
 import qiniu from "qiniu";
 
-qiniu.conf.ACCESS_KEY = "46X3X9Z4juBc-eo_6xC9yBrPxavTjEpB6w-UDV6w";
-qiniu.conf.SECRET_KEY = "JgDhksH7oz8wfG2-euOzj5keRbYAbc9Pbo_q__6t";
+const ACCESS_KEY = "46X3X9Z4juBc-eo_6xC9yBrPxavTjEpB6w-UDV6w";
+const SECRET_KEY = "JgDhksH7oz8wfG2-euOzj5keRbYAbc9Pbo_q__6t";
+const mac = new qiniu.auth.digest.Mac(ACCESS_KEY, SECRET_KEY);
 
 export default class CommonFn {
     constructor() {
@@ -20,7 +21,7 @@ export default class CommonFn {
             let img_path = await this.qiniu(req);
             res.send({
                 status: "success",
-                img_path,
+                message: img_path,
             })
         }catch(err) {
             res.send({
@@ -31,44 +32,57 @@ export default class CommonFn {
     }
 
     async qiniu(req){
+        return new Promise((resolve, reject) => {
            let form = new formidable.IncomingForm();
-           form.uploadDir = "./temp"
+           form.uploadDir = "./test";
+           form.keepExtensions = true;
            form.parse(req, async (err, fields, files) => {
                 let img_id = uuid.v4();
-                console.log(files)
+                console.log("files:",files);
                 let type = path.extname(files.file.name);
-                let repath = "./temp/" + img_id + type;
+                let repath = "./test/" + img_id + type;
+                
                 try {
                     let key = img_id + type;
                     // 上传的路径。
-                    await fs.rename(files.file.path, repath);
+                    fs.renameSync(files.file.path, repath);
                     const token = this.upToken("test", key);
                     const imgKey = this.uploadFile(token, key, repath);
                     // 删除图片。
                     fs.unlink(repath);
-                    resolve(imgKey);
+                    resolve(imgKey) 
                 }catch(err){
-                    fs.unlink(files.file.path);
-                    reject("保存失败")
+                    fs.unlink(repath);
+                    console.log(err)
+                    reject("保存失败");
                 }
-           })
+           });
+        })
     }
     // 上传策略函数。
     upToken(bucket, key){
         // bucket是上传的空间，key为上传到七牛云的文件名。
-        let putPolicy = new qiniu.rs.PutPolicy(bucket + ":" +key);
-        return putPolicy.token();
+        let putPolicy = new qiniu.rs.PutPolicy({scope: bucket});
+        return putPolicy.uploadToken(mac);
     }
     // 构建上传函数
     uploadFile(upToken, key, localFile){
-        let extra = new qiniu.io.PutExtra();
-        qiniu.io.putFile(upToken, key, localFile, extra, () => {
-            if(!err){
-                return ret.key;
-            } else {
-                console.log("err:", err);
-                return err;
-            }
+        return new Promise((resolve, reject) => {
+            let config = new qiniu.conf.Config();
+            config.zone = qiniu.zone.Zone_z0;
+            var formUploader = new qiniu.form_up.FormUploader(config);
+            var putExtra = new qiniu.form_up.PutExtra();
+            formUploader.putFile(upToken, key, localFile, putExtra, (respErr, respBody, respInfo) => {
+                if (respErr) {
+                    throw respErr;
+                }
+                if (respInfo.statusCode == 200) {
+                    resolve(respBody.key); 
+                } else {
+                    console.log(respInfo.statusCode);
+                    console.log(respBody);
+                }
+            })
         })
     }
 
