@@ -48,10 +48,10 @@ export default class CommonFn {
                     const token = this.upToken(bucket, key);
                     const imgKey = this.uploadFile(token, key, repath);
                     // 删除图片。
-                    // fs.unlink(repath);
+                    fs.unlink(repath);
                     resolve(imgKey) 
                 }catch(err){
-                    // fs.unlink(repath);
+                    fs.unlink(repath);
                     reject("保存失败");
                 }
            });
@@ -99,7 +99,6 @@ export default class CommonFn {
                 })
             }catch(err){
                 console.log("err:",err);
-                // fs.unlink(repath);
                 reject("保存图片失败");
             }
         })
