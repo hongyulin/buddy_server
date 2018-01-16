@@ -16,7 +16,6 @@ export default class CommonFn {
         this.qiniu = this.qiniu.bind(this);
     }
     async uploadImg(req, res, next) {
-        let type = req.params.type;
         try {
             let img_path = await this.qiniu(req);
             res.send({
@@ -37,23 +36,22 @@ export default class CommonFn {
            form.uploadDir = "./test";
            form.keepExtensions = true;
            form.parse(req, async (err, fields, files) => {
+                let bucket = fields.type;
                 let img_id = uuid.v4();
-                console.log("files:",files);
                 let type = path.extname(files.file.name);
                 let repath = "./test/" + img_id + type;
-                
                 try {
                     let key = img_id + type;
                     // 上传的路径。
                     fs.renameSync(files.file.path, repath);
-                    const token = this.upToken("test", key);
+                    await this.reSize(repath);
+                    const token = this.upToken(bucket, key);
                     const imgKey = this.uploadFile(token, key, repath);
                     // 删除图片。
-                    fs.unlink(repath);
+                    // fs.unlink(repath);
                     resolve(imgKey) 
                 }catch(err){
-                    fs.unlink(repath);
-                    console.log(err)
+                    // fs.unlink(repath);
                     reject("保存失败");
                 }
            });
@@ -86,32 +84,24 @@ export default class CommonFn {
         })
     }
 
-    async getPath(){
+    async reSize(repath){
         return new Promise((resolve, reject) => {
-            //创建一个新的incomingform表单
-            const form = formidable.IncomingForm();
-            form.uploadDir = "./public/images";
-            form.parse(req, async (err, fields, files) => {
-                let img_id = uuid.v1();
-                let fName = img_id + path.extname(files.file.name);
-                let path = "./public/images" + fName;
-                try{
-                    await fs.rename(files.file.path, path);
-                    gm(path)
-                    .resize(200, 200, "!")
-                    .write(path, async (err) => {
-                        if(err){
-                            reject("裁剪失败");
-                            return
-                        }
-                        resolve(fName);
-                    })
-                }catch(err){
-                    console.log("err:",err);
-                    fs.unlink(files.file.path);
-                    reject("保存图片失败");
-                }
-            })
+            try{
+                gm(repath)
+                .resize(200, 200, "!")
+                .write(repath, (err) => {
+                    if(err){
+                        console.log("裁剪失败",err)
+                        reject("裁剪失败");
+                        return
+                    }
+                    resolve("success");
+                })
+            }catch(err){
+                console.log("err:",err);
+                // fs.unlink(repath);
+                reject("保存图片失败");
+            }
         })
     }
     
