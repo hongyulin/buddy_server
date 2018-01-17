@@ -9,7 +9,9 @@ import formidable from "formidable";
 // 生成唯一id
 import uuid from "uuid";
 import Location from "../commonfn/location";
-
+import jwt from "jwt-simple";
+const config = require("config-lite")(__dirname);
+const jwtTokenSecret = config.default.token.jwtTokenSecret;
 class User extends Location {
     constructor(){
         super();
@@ -19,11 +21,18 @@ class User extends Location {
         const form = new formidable.IncomingForm();
         form.parse(req, async (err, fields, files) => {
             const {mobile, idCode} = fields;
+            const token = req.headers.token == undefined;
             try{
-                if(!mobile){
+                if(!mobile && !token){console.log(1)
                     throw new Error("手机参数错误");
-                }else if(!idCode){
+                }else if(!idCode && !token){
                     throw new Error("验证码参数错误");
+                }else if(token){
+                    let token_time = jwt.decode(token, jwtTokenSecret);
+                    token_time = token_time.exp;
+                    if(token_time > (new Date()).getTime()){
+                        res.send({"status": "success", is_register: true})
+                    }
                 }
             }catch(err){
                 res.send({
@@ -47,13 +56,18 @@ class User extends Location {
                     // location中的fetch有问题！       
                 }else{
                     const userInfoDetail = await userInfo.findOne({id: userDetail.id});
-                    res.send({"status": "success", "userInfo": userInfoDetail});
+                    const expires = (new Date()).getTime() + 7*24*60*60*1000;
+                    const token = jwt.encode({
+                        iss: "Levinson",
+                        exp: expires,
+                    }, jwtTokenSecret);
+                    res.send({"status": "success", "userInfo": userInfoDetail, token: token, is_register: true});
                 }
             }catch(err){
                 res.send({
                     status: 0,
                     type: "LOGIN_FAIL",
-                    message: "登录失败"
+                    message: err
                 })
             }
         })

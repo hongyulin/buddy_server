@@ -2,7 +2,7 @@ import express from 'express';
 import db from "./mongodb/db.js";
 // 管理config
 // import config from "config-lite";
-const config = require("config-lite")(__dirname)
+const config = require("config-lite")(__dirname);
 import router from "./routes/index.js";
 // 解析cookie
 import cookieParser from "cookie-parser";
@@ -16,6 +16,7 @@ import path from "path";
 import history from "connect-history-api-fallback";
 // 统计请求数量
 import statistic from "./middlewares/statistic";
+import jwt from "jwt-simple";
 
 const app = express();
 // 所有的路由都通过这个，添加头部。
@@ -37,7 +38,6 @@ app.all('*', (req, res, next) => {
 // session登录拦截，然后存入mongo
 const mongoSession = connectMongo(session);
 app.use(cookieParser());
-console.log(config)
 app.use(session({
     // 设置cookie中，保存session的字段名称，
     name: config.default.session.name,

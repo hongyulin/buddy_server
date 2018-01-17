@@ -2,6 +2,9 @@ export default {
     dbUrl: 'mongodb://127.0.0.1:27017/buddy',
     spiderUrl: 'http://tieba.baidu.com',
     port: 8989,
+    token: {
+        "jwtTokenSecret": "loginWithToken"
+    },
     session: {
         name: 'indentitykey',
         secret: 'safe',
