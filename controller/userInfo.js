@@ -10,6 +10,7 @@ class UserInfo extends CommonFn {
         const form = new formidable.IncomingForm();
         form.parse(req, async (err, fields, files) => {
             const {nickName, headerImg, user_id} = fields;
+            
             try {
                 if(!nickName){
                     throw new Error("未填写用户名")
@@ -27,7 +28,8 @@ class UserInfo extends CommonFn {
                     header_img: headerImg, 
                     name: nickName
                 }
-                userInfo.findByIdAndUpdate({user_id}, {$set: {new_data}}, (err, tank) => {
+                console.log(new_data);
+                userInfo.findOneAndUpdate({id: user_id}, {$set: new_data}, (err, tank) => {
                     if (err) res.send(err);
                     res.send(tank);
                 })
