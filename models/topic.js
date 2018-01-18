@@ -4,11 +4,11 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const topicSchema = new Schema({
-    id: String,
+    id:    String,
     title: String,
     description: String,
-    header_img: String,
-    img: String,
+    header_img:  String,
+    img:     String,
     partake: Number,
 });
 

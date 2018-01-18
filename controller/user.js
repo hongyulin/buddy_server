@@ -49,7 +49,13 @@ class User extends Location {
                     const newUser = {mobile, id: user_id};
                     const login_time = (new Date()).getTime();
                     const cityInfo = await this.getPosition(req);
-                    const newUserInfo = {name: mobile, id: user_id, login_time, city: cityInfo};
+                    const newUserInfo = {
+                        name: mobile, 
+                        mobile: mobile,
+                        id: user_id, 
+                        login_time, 
+                        city: cityInfo,
+                    };
                     user.create(newUser);
                     userInfo.create(newUserInfo);
                     res.send({"status": "success", "userInfo": newUserInfo});

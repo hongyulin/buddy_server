@@ -7,9 +7,14 @@ const commonFn = new CommonFn();
 
 
 const router = express.Router();
+
 router.post("/login", User.login);
-router.post("/uploadimg", commonFn.uploadImg)
+
+router.post("/uploadimg", commonFn.uploadImg);
+
 // 添加一个保存用户信息的路由
 router.post("/register", UserInfo.register);
+
+router.post("/updatainfo", UserInfo.updataInfo);
 
 export default router;

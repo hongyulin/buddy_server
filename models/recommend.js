@@ -4,15 +4,15 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const recommendSchema = new Schema({
-    id: String,
+    id:         String,
     header_img: String,
-    name: String,
-    time: Date,
-    img: String,
-    content: String,
-    likes: Number,
-    talk_num: Number,
-    share_num: Number,
+    name:       String,
+    time:       Date,
+    img:        String,
+    content:    String,
+    likes:      Number,
+    talk_num:   Number,
+    share_num:  Number,
 });
 
 const recommend = mongoose.model('recommend', recommendSchema);

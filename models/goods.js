@@ -4,15 +4,15 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const goodsSchema = new Schema({
-    id: String,
-    name: String,
-    img: {type: String, default: "default_good.jpg"},
-    ori_price: Number,
-    dis_price: Number,
-    free_post: {type:Boolean, default: true},
-    source: String,
+    id:         String,
+    name:       String,
+    img:        {type: String, default: "default_good.jpg"},
+    ori_price:  Number,
+    dis_price:  Number,
+    free_post:  {type:Boolean, default: true},
+    source:     String,
     red_packet: {
-        money: Number,
+        money:    Number,
         send_num: Number,
     }
 });

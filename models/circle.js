@@ -4,18 +4,18 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const circleSchema = new Schema({
-    id: String,
-    description: String,
-    img: [String],
-    address: String,
-    longitude: String,
-    latitude: String,
+    id:         String,
+    description:String,
+    img:        [String],
+    address:    String,
+    longitude:  String,
+    latitude:   String,
     header_img: String,
-    name: String,
+    name:       String,
     apply_people: [
         {
-            name: String,
-            id: String,
+            name:       String,
+            id:         String,
             header_img: String,
         }
     ],

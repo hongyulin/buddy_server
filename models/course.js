@@ -4,12 +4,12 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const courseSchema = new Schema({
-    id: String,
+    id:         String,
     header_img: String,
-    title: String,
-    describe: String,
-    subscribe: Number,
-    price: Number,
+    title:      String,
+    describe:   String,
+    subscribe:  Number,
+    price:      Number,
 });
 
 const course = mongoose.model('course', courseSchema);

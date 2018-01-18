@@ -8,32 +8,42 @@ const userInfoSchema = new Schema({
     header_img: {type: String, default: "default_header.jpg"},
     name: String, 
     mobile: String,
-    sex: String,
-    age: Number,
-    level: {type: Number, default: 1},
+    info: {
+        sex:    String,
+        level:  String, 
+        BFP:    String, 
+        target: String, 
+        limbs:  String, 
+        year:   String, 
+        month:  String, 
+        day:    String, 
+        height: String, 
+        weight: String,
+    },
+    level:    {type: Number, default: 1},
     step_Num: {type: Number, default: 0},
     following: [
         {
-            id: String,
-            name: String,
+            id:         {type: String, default: ""},
+            name:       {type: String, default: ""},
             header_img: {type: String, default: "default_header.jpg"}
         },
     ],
     login_time: Date,
     self_img: [
-        String
+        {type: String, default: ""}
     ],
-    exercise_time: Number,
-    fans: Number,
-    choice_num: Number,
-    city: String,
-    longitude: String,
-    latitude: String,
+    exercise_time: {type: Number, default: 0},
+    fans:          {type: Number, default: 0},
+    choice_num:    {type: Number, default: 0},
+    city:          {type: String, default: ""},
+    longitude:     {type: String, default: ""},
+    latitude:      {type: String, default: ""},
     circle: [
         {
-            name: String,
-            header_img: String,
-            id: String,
+            name:       {type: String, default: ""},
+            header_img: {type: String, default: ""},
+            id:         {type: String, default: ""},
         }
     ]
 });

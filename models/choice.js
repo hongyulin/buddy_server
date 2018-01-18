@@ -4,12 +4,12 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const choiceSchema = new Schema({
-    id: String,
-    name: String,
-    img: String,
+    id:         String,
+    name:       String,
+    img:        String,
     header_img: String,
-    description: String,
-    likes: Number,
+    description:String,
+    likes:      Number,
 });
 
 const choice = mongoose.model('choice', choiceSchema);
