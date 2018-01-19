@@ -46,24 +46,31 @@ user.forEach((item) => {
 collectTopic.forEach((item) => {
     TopicModel.create(item);
 });
+
 collectRecommendUser.forEach((item) => {
     RecommendUserModel.create(item);
 });
+
 collectGood.forEach((item) => {
     GoodsModel.create(item);
 });
+
 collectExperience.forEach((item) => {
     ExperienceModel.create(item);
 });
+
 collectCourse.forEach((item) => {
     CourseModel.create(item);
 });
+
 collectCircle.forEach((item) => {
     CircleModel.create(item);
 });
+
 collectChoice.forEach((item) => {
     ChoiceModel.create(item);
 });
+
 collectCircleTrend.forEach((item) => {
     CircleTrendsModel.create(item);
 });

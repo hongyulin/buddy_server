@@ -15,7 +15,7 @@ import UserInfo from "../controller/userInfo";
 
 const router = express.Router();
 // 广告
-router.get("/ads", Ads.test);
+router.get("/mall_ads", Ads.mallAd);
 
 // 小八精选
 router.get("/choice", Choice.test);
@@ -33,7 +33,7 @@ router.get("/course", Course.test);
 router.get("/experience", Experience.test);
 
 // 商品
-router.get("/goods", Goods.test);
+router.get("/goods", Goods.goodList);
 
 // 我的界面
 router.get("/mine", Mine.test);
