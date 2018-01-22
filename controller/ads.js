@@ -4,12 +4,12 @@ import CommonFn from "../commonfn/commonFn";
 class Ads extends CommonFn{
     constructor(){
         super();
-        this.mallAd = this.mallAd.bind(this);
+        this.ads = this.ads.bind(this);
     }
-    mallAd(req, res, next){
+    ads(req, res, next){
 		const type = req.query.type;
 		try {
-			ads.findOne({type: type}, (err, tank) => {
+			ads.find({type: type}, (err, tank) => {
 				if(err) res.send(err);
 				res.send({
 					message: tank,

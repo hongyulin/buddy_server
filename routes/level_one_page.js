@@ -15,7 +15,7 @@ import UserInfo from "../controller/userInfo";
 
 const router = express.Router();
 // 广告
-router.get("/mall_ads", Ads.mallAd);
+router.get("/ads", Ads.ads);
 
 // 小八精选
 router.get("/choice", Choice.test);
@@ -27,7 +27,7 @@ router.get("/circle/trends", Circle_trends.test);
 router.get("/near/circle", Circle.test);
 
 // 课程推荐
-router.get("/course", Course.test);
+router.get("/course", Course.courseList);
 
 // 小八精选里面的经验
 router.get("/experience", Experience.test);
@@ -51,6 +51,6 @@ router.get("/topic", Topic.test);
 router.get("/mycircle", UserInfo.register);
 
 // 获取附近人
-// router.get("/nearperson", UserInfo.);
+router.get("/nearperson", UserInfo.nearPerson);
 
 export default router;

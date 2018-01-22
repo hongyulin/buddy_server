@@ -7,6 +7,7 @@ class UserInfo extends CommonFn {
         super();
         this.register = this.register.bind(this);
         this.updataInfo = this.updataInfo.bind(this);
+        this.nearPerson = this.nearPerson.bind(this);
     }
     register(req, res, next){
         const form = new formidable.IncomingForm();
@@ -66,6 +67,39 @@ class UserInfo extends CommonFn {
             }
 
         })
+    }
+
+    async nearPerson(req, res, next){
+        const {pageIndex, pageSize} = req.query;
+        const skips = (pageIndex -1)*pageSize;
+        if(pageIndex < 0 || pageSize < 0){
+            res.send({
+                message: "参数错误",
+                status: 400,
+            });
+            return
+        }
+        try {
+            let fields = {
+                header_img: 1, 
+                step_Num:   1, 
+                login_time: 1, 
+                name:       1,
+                _id:        0,
+                info:       1, 
+                level:      1
+            }
+            const message = await userInfo.find({}, fields, {}).skip(Number(skips)).limit(Number(pageSize));
+            res.send({
+                message: message,
+                status:  200
+            })
+        }catch(err){
+            res.send({
+                message: err,
+                status:  501,
+            })
+        }
     }
 };
 

@@ -12,7 +12,7 @@ class Goods extends CommonFn{
 		if(pageIndex < 0 || pageSize < 0){
 			res.send({
 				message: "参数错误",
-				status: 400
+				status: 400,
 			})
 			return
 		}
