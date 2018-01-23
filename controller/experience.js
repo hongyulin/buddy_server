@@ -4,9 +4,21 @@ import CommonFn from "../commonfn/commonFn";
 class Experience extends CommonFn{
     constructor(){
         super();
+        this.getExper = this.getExper.bind(this);
     }
-    test(req, res, next){
-        res.send({experience: "test"});
+    getExper(req, res, next){
+        try{
+    		const message = await topic.find();
+        	res.send({
+        		message: message,
+        		status: 200
+        	});
+    	}catch(err){
+    		res.send({
+    			message: err,
+    			status: 500
+    		})
+    	}
     }
 }
 

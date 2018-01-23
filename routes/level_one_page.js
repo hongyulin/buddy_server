@@ -18,7 +18,7 @@ const router = express.Router();
 router.get("/ads", Ads.ads);
 
 // 小八精选
-router.get("/choice", Choice.test);
+router.get("/choice", Choice.getChoice);
 
 // 圈子动态
 router.get("/circle/trends", Circle_trends.test);
@@ -30,7 +30,7 @@ router.get("/near/circle", Circle.test);
 router.get("/course", Course.courseList);
 
 // 小八精选里面的经验
-router.get("/experience", Experience.test);
+router.get("/experience", Experience.getExper);
 
 // 商品
 router.get("/goods", Goods.goodList);
@@ -45,7 +45,7 @@ router.get("/recommend/user", Recommend_user.test);
 router.get("/recommend", Recommend.test);
 
 // 小八精选里面的热门话题
-router.get("/topic", Topic.test);
+router.get("/topic", Topic.getTTopic);
 
 // 获取我的圈子
 router.get("/mycircle", UserInfo.register);
