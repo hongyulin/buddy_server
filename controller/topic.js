@@ -4,9 +4,9 @@ import CommonFn from "../commonfn/commonFn";
 class Topic extends CommonFn{
     constructor(){
         super();
-        this.getTTopic = this.getTTopic.bind(this);
+        this.getTopic = this.getTopic.bind(this);
     }
-    async getTTopic(req, res, next){
+    async getTopic(req, res, next){
         try{
     		const message = await topic.find();
         	res.send({

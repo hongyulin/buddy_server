@@ -6,9 +6,9 @@ class Experience extends CommonFn{
         super();
         this.getExper = this.getExper.bind(this);
     }
-    getExper(req, res, next){
+	async getExper(req, res, next){
         try{
-    		const message = await topic.find();
+    		const message = await experience.find();
         	res.send({
         		message: message,
         		status: 200

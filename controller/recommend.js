@@ -4,8 +4,9 @@ import CommonFn from "../commonfn/commonFn";
 class Recommend extends CommonFn{
     constructor(){
         super();
+        this.recommend = this.recommend.bind(this);
     }
-    test(req, res, next){
+    recommend(req, res, next){
         res.send({recommend: "test"});
     }
 }

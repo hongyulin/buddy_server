@@ -8,6 +8,7 @@ class UserInfo extends CommonFn {
         this.register = this.register.bind(this);
         this.updataInfo = this.updataInfo.bind(this);
         this.nearPerson = this.nearPerson.bind(this);
+        this.recentExercise = this.recentExercise.bind(this);
     }
     register(req, res, next){
         const form = new formidable.IncomingForm();
@@ -100,6 +101,10 @@ class UserInfo extends CommonFn {
                 status:  501,
             })
         }
+    }
+
+    recentExercise(){
+
     }
 };
 

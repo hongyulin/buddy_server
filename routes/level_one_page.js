@@ -39,13 +39,15 @@ router.get("/goods", Goods.goodList);
 router.get("/mine", Mine.test);
 
 // 推荐关注的人
-router.get("/recommend/user", Recommend_user.test);
+router.get("/recommend/user", Recommend_user.getUser);
 
 // 小八动态里面的推荐
-router.get("/recommend", Recommend.test);
+router.get("/recommend", Recommend.recommend);
+router.get("/recent/exercise", UserInfo.recentExercise);
+
 
 // 小八精选里面的热门话题
-router.get("/topic", Topic.getTTopic);
+router.get("/topic", Topic.getTopic);
 
 // 获取我的圈子
 router.get("/mycircle", UserInfo.register);
