@@ -21,10 +21,10 @@ router.get("/ads", Ads.ads);
 router.get("/choice", Choice.getChoice);
 
 // 圈子动态
-router.get("/circle/trends", Circle_trends.test);
+router.get("/circle/trends", Circle_trends.circleTrend);
 
 // 根据定位获取附近的圈子
-router.get("/near/circle", Circle.test);
+router.get("/near/circle", Circle.circleList);
 
 // 课程推荐
 router.get("/course", Course.courseList);
@@ -36,7 +36,7 @@ router.get("/experience", Experience.getExper);
 router.get("/goods", Goods.goodList);
 
 // 我的界面
-router.get("/mine", Mine.test);
+router.post("/mine", Mine.myStatus);
 
 // 推荐关注的人
 router.get("/recommend/user", Recommend_user.getUser);
@@ -50,7 +50,7 @@ router.get("/recent/exercise", UserInfo.recentExercise);
 router.get("/topic", Topic.getTopic);
 
 // 获取我的圈子
-router.get("/mycircle", UserInfo.register);
+router.post("/mycircle", UserInfo.myCircle);
 
 // 获取附近人
 router.get("/nearperson", UserInfo.nearPerson);

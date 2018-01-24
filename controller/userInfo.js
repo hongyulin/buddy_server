@@ -1,6 +1,6 @@
 import userInfo from "../models/userInfo";
 import CommonFn from "../commonfn/commonFn";
-import formidable from "formidable"
+import formidable from "formidable";
 
 class UserInfo extends CommonFn {
     constructor(){
@@ -103,8 +103,60 @@ class UserInfo extends CommonFn {
         }
     }
 
-    recentExercise(){
+    async recentExercise(req, res, next){
+        const {pageIndex, pageSize} = req.query;
+    	const skips = (pageIndex -1)*pageSize;
+		if(pageIndex < 0 || pageSize < 0){
+			res.send({
+				message: "参数错误",
+				status: 400,
+			})
+			return
+		}
+    	try{
+            let field = {
+                header_img: 1,
+                self_img:   1,
+                login_time: 1,
+                name:       1,
+            }
+    		const message = await userInfo.find({}, field, {}).skip(Number(skips)).limit(Number(pageSize));
+        	res.send({
+        		message: message,
+        		status:  200
+        	});
+    	}catch(err){
+    		res.send({
+    			message: err,
+    			status:  500
+    		})
+    	}
+    }
 
+    async myCircle(req, res, next){
+        const form = formidable.IncomingForm();
+        form.parse(req, async (err, fields, files) => {
+            const user_id = fields.id;
+            try{
+                await userInfo.find({id: user_id},{circle: 1, _id: 0}, (err, tank) => {
+                    if(err){
+                        res.send(err);
+                    } else{
+                        let newMes = tank[0]["circle"].slice(0,3);
+                        res.send({
+                            message: newMes,
+                            status: 200
+                        });
+                    }
+
+                })
+            }catch(err){
+                res.send({
+                    message: err,
+                    status: 500,
+                });
+            }
+        })
     }
 };
 

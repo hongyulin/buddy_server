@@ -28,7 +28,6 @@ class Goods extends CommonFn{
     			status: 500
     		})
     	}
-    	
     }
 }
 
