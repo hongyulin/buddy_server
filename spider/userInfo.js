@@ -1,11 +1,18 @@
 import uuid from "uuid";
 // 粉丝数和following的人是相关联的
+// 默认关注的圈子的id要对应上。
 export default [
 {
     id: uuid.v4(),
     header_img: "http://p24g7dbyx.bkt.clouddn.com/0153330b.jpg",
     name: "levinson",
     mobile: 18752098869,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -39,8 +46,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -51,6 +68,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/01bf7d57.jpg",
     name: "养熊阿姨",
     mobile: 18752098868,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -84,8 +107,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -96,6 +129,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/079f6699.jpg",
     name: "肌不可失i",
     mobile: 18752098867,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -129,8 +168,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -141,6 +190,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/0a009a06.jpg",
     name: "nice華仔",
     mobile: 18752098866,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -174,8 +229,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -186,6 +251,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/1220323e.jpg",
     name: "心微凉丶黑米",
     mobile: 18752098865,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -219,8 +290,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -231,6 +312,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/170469b0.jpg",
     name: "梦梦梦魇来袭",
     mobile: 18752098864,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -264,8 +351,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -276,6 +373,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/185b3448.jpg",
     name: "__真讽刺z",
     mobile: 18752098863,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -309,8 +412,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -321,6 +434,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/19b50d94.jpg",
     name: "丶小狐狸_",
     mobile: 18752098862,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -337,10 +456,20 @@ export default [
     step_Num: 4275,
     following: [
         {
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
             id: uuid.v4(),
-            name: "",
-            header_img: ""
         },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
+            id: uuid.v4(),
+        }
     ],
     login_time: (new Date()).toISOString(),
     self_img: [
@@ -366,6 +495,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/2253ca67.jpg",
     name: "莎哟哟YO",
     mobile: 18752098861,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -399,8 +534,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -411,6 +556,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/2444c136.jpg",
     name: "结局偏不有趣",
     mobile: 18752098860,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -444,8 +595,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -456,6 +617,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/263e880c.jpg",
     name: "惠伯",
     mobile: 18752098859,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -489,8 +656,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -501,6 +678,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/2a40ea29.jpg",
     name: "嘴55",
     mobile: 18752098858,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -534,8 +717,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -546,6 +739,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/2b9e6e63.jpg",
     name: "原子核不寂寞",
     mobile: 18752098857,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -579,8 +778,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -591,6 +800,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/2bbc875d.jpg",
     name: "花落绪",
     mobile: 18752098856,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -624,8 +839,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -636,6 +861,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/323c944b.jpg",
     name: "qq2539845629",
     mobile: 18752098854,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -669,8 +900,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -681,6 +922,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/329626a0.jpg",
     name: "熱月",
     mobile: 18752098853,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -714,8 +961,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -726,6 +983,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/34087177.jpg",
     name: "愤怒的小土堆",
     mobile: 18752098852,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -759,8 +1022,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -771,6 +1044,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/3e142e4a.jpg",
     name: "星火纪元",
     mobile: 18752098851,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -804,8 +1083,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -816,6 +1105,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/41a7ae53.jpg",
     name: "骑士剪刀手",
     mobile: 18752098849,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -849,8 +1144,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -861,6 +1166,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/50ca849e.jpg",
     name: "云之安逸啊",
     mobile: 18752098847,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -894,8 +1205,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -906,6 +1227,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/51d68c9a.jpg",
     name: "随便打桶酱油",
     mobile: 18752098846,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -939,8 +1266,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -951,6 +1288,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/552daf4a.jpg",
     name: "精神小伙05",
     mobile: 18752098845,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -984,8 +1327,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -996,6 +1349,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/5623f096.jpg",
     name: "夜行小正太",
     mobile: 18752098844,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -1029,8 +1388,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -1041,6 +1410,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/590f4844.jpg",
     name: "小佐丫",
     mobile: 18752098843,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -1074,8 +1449,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -1086,6 +1471,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/59381130.jpg",
     name: "lei12gui",
     mobile: 18752098842,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -1119,8 +1510,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -1131,6 +1532,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/5bf44705.jpg",
     name: "lei12gui",
     mobile: 18752098841,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -1164,8 +1571,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -1176,6 +1593,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/5c61a697.jpg",
     name: "lei12gui",
     mobile: 18752098841,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -1209,8 +1632,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -1221,6 +1654,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/623f7f31.jpg",
     name: "lei12gui",
     mobile: 18752098840,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -1254,8 +1693,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -1266,6 +1715,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/628c6533.jpg",
     name: "lei12gui",
     mobile: 18752098839,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -1299,8 +1754,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]
@@ -1311,6 +1776,12 @@ export default [
     header_img: "http://p24g7dbyx.bkt.clouddn.com/6299242e.jpg",
     name: "lei12gui",
     mobile: 18752098838,
+    shop_car_new: 0,
+    shop_ticker_new: 0,
+    shop_record_new: 0,
+    badge: 0,
+    trends_new: 0,
+    join_time: (new Date()).toISOString(),
     info: {
         sex: "man",
         level: "", 
@@ -1344,8 +1815,18 @@ export default [
     latitude: "",
     circle: [
         {
-            name: "",
-            header_img: "",
+            name: "上海跑步圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/cfdc660e.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "上海足球圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/64d09ca3.jpg",
+            id: uuid.v4(),
+        },
+        {
+            name: "器械健身圈",
+            header_img: "http://p24g7dbyx.bkt.clouddn.com/b218de55.jpg",
             id: uuid.v4(),
         }
     ]

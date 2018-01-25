@@ -15,28 +15,28 @@ class Mine extends CommonFn{
             const user_id = fields.id;
             try{
                 let fild = {
-                    shop_car:     1,
-                    shop_ticker:  1,
-                    shop_record:  1,
-                    badge:        1,
-                    header_img:   1,
-                    name:         1,
-                    fans:         1,
-                    following:    1,
-                    trends:       1,
-                    join_time:    1,
-                    exercise_time:1,
-                    _id:          0,
+                    shop_car_new:    1,
+                    shop_ticker_new: 1,
+                    shop_record_new: 1,
+                    badge:           1,
+                    header_img:      1,
+                    name:            1,
+                    fans:            1,
+                    following:       1,
+                    trends_new:      1,
+                    join_time:       1,
+                    exercise_time:   1,
+                    _id:             0,
                 }
 
-                await userInfo.find({id: user_id},{fild}, (err, tank) => {
+                await userInfo.find({id: user_id},fild, (err, tank) => {
                     console.log("2")
                     if(err){
                         res.send(err);
                     } else{
                         res.send({
                             message: tank,
-                            status: 200
+                            status:  200
                         });
                     }
 
@@ -45,7 +45,7 @@ class Mine extends CommonFn{
                 console.log("3")
                 res.send({
                     message: err,
-                    status: 500,
+                    status:  500,
                 });
             }
         })
