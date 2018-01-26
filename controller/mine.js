@@ -1,5 +1,5 @@
 // 合并到userInfo
-import mine from "../models/mine";
+// import mine from "../models/mine";
 import CommonFn from "../commonfn/commonFn";
 import formidable from "formidable";
 import userInfo from "../models/userInfo";
@@ -28,9 +28,8 @@ class Mine extends CommonFn{
                     exercise_time:   1,
                     _id:             0,
                 }
-
                 await userInfo.find({id: user_id},fild, (err, tank) => {
-                    console.log("2")
+                    console.log("2");
                     if(err){
                         res.send(err);
                     } else{
@@ -42,7 +41,6 @@ class Mine extends CommonFn{
 
                 })
             }catch(err){
-                console.log("3")
                 res.send({
                     message: err,
                     status:  500,

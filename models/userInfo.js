@@ -8,6 +8,12 @@ const userInfoSchema = new Schema({
     header_img: {type: String, default: "default_header.jpg"},
     name: String, 
     mobile: String,
+    shop_car_new: Number,
+    shop_ticker_new: Number,
+    shop_record_new: Number,
+    badge: Number,
+    trends_new: Number,
+    join_time: Date,
     info: {
         sex:    String,
         level:  String, 
