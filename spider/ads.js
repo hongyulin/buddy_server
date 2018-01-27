@@ -75,7 +75,7 @@ export default [
 {
     id: uuid.v4(),
     type:"CHALLENGE",
-    img:"http://p26ckbljr.bkt.clouddn.com/7749e2c841fe43a784b875e261fd865f.jpeg"
+    img:"http://p26ckbljr.bkt.clouddn.com/7749e2c841fe43a184b875e261fd865f.jpeg"
 },
 {
     id: uuid.v4(),

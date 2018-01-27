@@ -39,7 +39,7 @@ router.get("/goods", Goods.goodList);
 router.post("/mine", Mine.myStatus);
 
 // 推荐关注的人
-router.get("/recommend/user", Recommend_user.getUser);
+router.post("/recommend/user", Recommend_user.getUser);
 
 // 小八动态里面的推荐
 router.get("/recommend", Recommend.recommend);

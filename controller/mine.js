@@ -29,7 +29,6 @@ class Mine extends CommonFn{
                     _id:             0,
                 }
                 await userInfo.find({id: user_id},fild, (err, tank) => {
-                    console.log("2");
                     if(err){
                         res.send(err);
                     } else{

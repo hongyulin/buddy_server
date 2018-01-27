@@ -3,6 +3,7 @@ export default [
 {
     id: uuid.v4(),
     description: "喜欢羽毛球运动的朋友欢迎加入！",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/20141010112427715.jpg", 
         "http://p24gbm5uc.bkt.clouddn.com/20141010112432880.png", 
@@ -24,6 +25,7 @@ export default [
 {
     id: uuid.v4(),
     description: " 你一定要会跑，并以此为乐",
+    comment: Math.floor(Math.random()*1000),
     img: 
     [
         "http://p24gbm5uc.bkt.clouddn.com/t1t201412-afc8664782e84fd988d04e01f84f6efb.jpeg", 
@@ -46,6 +48,7 @@ export default [
 {
     id: uuid.v4(),
     description: " 以球会友，生命在于运动！",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/t1t201511-b9c7b3c9eeff4136b013e6e3c4e8ad97.jpeg", 
         "http://p24gbm5uc.bkt.clouddn.com/t1t201601-40008254b8f84dbb8505cb8b7bdc56f3.jpeg", 
@@ -67,6 +70,7 @@ export default [
 {
     id: uuid.v4(),
     description: " 大家一起运动运动!打打球游游泳......",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/t1t201703-1c78f915a4a14f60a537477763bc6b15.jpeg", 
         "http://p24gbm5uc.bkt.clouddn.com/t1t201703-61baf1ba74d44032bcdc81051ef75bb2.jpeg", 
@@ -88,6 +92,7 @@ export default [
 {
     id: uuid.v4(),
     description: "喜欢网球运动的朋友欢迎加入！",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/t1t201710-366c4bd5780a49e09c4b0c49acba5c71.jpeg", 
         "http://p24gbm5uc.bkt.clouddn.com/u=1174369999,613852094&fm=27&gp=0.jpg", 
@@ -109,6 +114,7 @@ export default [
 {
     id: uuid.v4(),
     description: " 热爱足球的喜欢踢球的朋友们！这里才有纯粹的足球!",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/u=1694973531,2612892078&fm=27&gp=0.jpg", 
         "http://p24gbm5uc.bkt.clouddn.com/u=2572572693,4158016064&fm=200&gp=0.jpg", 
@@ -130,6 +136,7 @@ export default [
 {
     id: uuid.v4(),
     description: "  羽毛球，游泳，击剑，攀岩，射箭，旅游，CS野战射击，腐败，聚会",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/u=1180767016,4079737854&fm=11&gp=0.jpg", 
         "http://p24gbm5uc.bkt.clouddn.com/u=1768086874,1290163331&fm=27&gp=0.jpg", 
@@ -151,6 +158,7 @@ export default [
 {
     id: uuid.v4(),
     description: "  对自己有要求,想学习瑜伽的,想有更好的身材的美女们千万不要错过,我们一起探讨!",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/u=1187920310,1898250989&fm=27&gp=0.jpg", 
         "http://p24gbm5uc.bkt.clouddn.com/u=3330553029,3993605558&fm=27&gp=0.jpg", 
@@ -172,6 +180,7 @@ export default [
 {
     id: uuid.v4(),
     description: "热爱这项运动的朋友,离的近的欢迎大家一起来切磋,进步,以球会友",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/u=1525068456,1152862812&fm=11&gp=0.jpg", 
         "http://p24gbm5uc.bkt.clouddn.com/u=3457118527,1968021754&fm=200&gp=0.jpg", 
@@ -193,6 +202,7 @@ export default [
 {
     id: uuid.v4(),
     description: "一起游泳，一起健康",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/20141010112427715.jpg", 
         "http://p24gbm5uc.bkt.clouddn.com/u=3727542929,3601275510&fm=27&gp=0.jpg", 
@@ -214,6 +224,7 @@ export default [
 {
     id: uuid.v4(),
     description: "大唐后期时代~",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/u=3970634207,1852805670&fm=27&gp=0.jpg", 
         "http://p24gbm5uc.bkt.clouddn.com/u=520003517,223007562&fm=200&gp=0.jpg", 
@@ -235,6 +246,7 @@ export default [
 {
     id: uuid.v4(),
     description: "欢迎喜爱健身的朋友加入",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/u=905252399,3793867534&fm=27&gp=0.jpg", 
         "http://p24gbm5uc.bkt.clouddn.com/%E4%B8%8B%E8%BD%BD%20%281%29.jpg", 
@@ -256,6 +268,7 @@ export default [
 {
     id: uuid.v4(),
     description: "喜欢羽毛球运动的朋友欢迎加入！",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/t1t201511-b9c7b3c9eeff4136b013e6e3c4e8ad97.jpeg", 
         "http://p24gbm5uc.bkt.clouddn.com/u=3457118527,1968021754&fm=200&gp=0.jpg",
@@ -277,6 +290,7 @@ export default [
 {
     id: uuid.v4(),
     description: "喜欢篮球的朋友快来加入我们吧，我们已经成立了两年了。有固定的活动场馆，还会举行篮球联赛，快加入一起共享篮球的快乐！",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/t1t201601-40008254b8f84dbb8505cb8b7bdc56f3.jpeg",  
         "http://p24gbm5uc.bkt.clouddn.com/u=2916021456,42829660&fm=27&gp=0.jpg", 
@@ -298,6 +312,7 @@ export default [
 {
     id: uuid.v4(),
     description: " 想怎么玩,就怎么玩,不HIGH不算完.....",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/t1t201710-366c4bd5780a49e09c4b0c49acba5c71.jpeg", 
         "http://p24gbm5uc.bkt.clouddn.com/u=1174369999,613852094&fm=27&gp=0.jpg", 
@@ -319,6 +334,7 @@ export default [
 {
     id: uuid.v4(),
     description: " 3.0-5.0 圈,只要你水平3.0以上,自信自己的网球水平,这里总有你的对手.",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/t1t201703-1c78f915a4a14f60a537477763bc6b15.jpeg", 
         "http://p24gbm5uc.bkt.clouddn.com/t1t201711-bbd11d60e9304bbc99f150d903f08bd7.jpeg",  
@@ -341,6 +357,7 @@ export default [
 {
     id: uuid.v4(),
     description: "是一群喜爱羽毛球的快乐达人组建的，大家天天打球，天天快乐",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/t1t201703-61baf1ba74d44032bcdc81051ef75bb2.jpeg", 
         "http://p24gbm5uc.bkt.clouddn.com/u=3457118527,1968021754&fm=200&gp=0.jpg", 
@@ -363,6 +380,7 @@ export default [
 {
     id: uuid.v4(),
     description: "  健身防身，修身养性",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/t1t201705-3816bd900f084ada9db1d31ffe77978b.jpeg", 
         "http://p24gbm5uc.bkt.clouddn.com/t1t201601-40008254b8f84dbb8505cb8b7bdc56f3.jpeg", 
@@ -385,6 +403,7 @@ export default [
 {
     id: uuid.v4(),
     description: "热爱五子棋，交流和探索现代五子棋技术，作为一种持久的爱好，让我们相聚在一起",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/u=2916021456,42829660&fm=27&gp=0.jpg", 
         "http://p24gbm5uc.bkt.clouddn.com/t1t201711-bbd11d60e9304bbc99f150d903f08bd7.jpeg",  
@@ -406,6 +425,7 @@ export default [
 },
 {
     id: uuid.v4(),
+    comment: Math.floor(Math.random()*1000),
     description: "中西文化交流活动",
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/u=2916021456,42829660&fm=27&gp=0.jpg", 
@@ -429,6 +449,7 @@ export default [
 {
     id: uuid.v4(),
     description: "一直想找个固定的舞伴,共同切磋提高..",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/20141010112427715.jpg", 
         "http://p24gbm5uc.bkt.clouddn.com/u=3457118527,1968021754&fm=200&gp=0.jpg", 
@@ -451,6 +472,7 @@ export default [
 {
     id: uuid.v4(),
     description: " 热爱拉丁的亲爱的同学们",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/t1t201601-40008254b8f84dbb8505cb8b7bdc56f3.jpeg", 
         "http://p24gbm5uc.bkt.clouddn.com/u=2572572693,4158016064&fm=200&gp=0.jpg", 
@@ -474,6 +496,7 @@ export default [
 {
     id: uuid.v4(),
     description: "喜欢拉丁的朋友",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/t1t201710-366c4bd5780a49e09c4b0c49acba5c71.jpeg", 
         "http://p24gbm5uc.bkt.clouddn.com/u=2572572693,4158016064&fm=200&gp=0.jpg",
@@ -495,6 +518,7 @@ export default [
 {
     id: uuid.v4(),
     description: " 球友乐园",
+    comment: Math.floor(Math.random()*1000),
     img:[
         "http://p24gbm5uc.bkt.clouddn.com/%E4%B8%8B%E8%BD%BD.jpg", 
         "http://p24gbm5uc.bkt.clouddn.com/t1t201501-18c7ee75b56a484db8c0c2142ff76138.jpeg", 
@@ -517,6 +541,7 @@ export default [
 {
     id: uuid.v4(),
     description: "  运动健身，打得尽兴，价格公道，童叟无欺",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/u=1174369999,613852094&fm=27&gp=0.jpg",  
         "http://p24gbm5uc.bkt.clouddn.com/u=3457118527,1968021754&fm=200&gp=0.jpg", 
@@ -538,6 +563,7 @@ export default [
 {
     id: uuid.v4(),
     description: " 喜欢玩桌上足球的朋友么，赶快加入吧！",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/t1t201711-bbd11d60e9304bbc99f150d903f08bd7.jpeg",
         "http://p24gbm5uc.bkt.clouddn.com/t1t201601-40008254b8f84dbb8505cb8b7bdc56f3.jpeg", 
@@ -559,6 +585,7 @@ export default [
 {
     id: uuid.v4(),
     description: "一个又自由又有专业教练的球会，在这里可以找到你想要的朋友及活动！！",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/t1t201412-afc8664782e84fd988d04e01f84f6efb.jpeg", 
         "http://p24gbm5uc.bkt.clouddn.com/t1t201711-bbd11d60e9304bbc99f150d903f08bd7.jpeg",  
@@ -580,6 +607,7 @@ export default [
 {
     id: uuid.v4(),
     description: "如今赚钱潮流变，奥非斯里点键盘．头昏眼花脑萎缩，四肢无力心发慌！娘子怨君最无用，投医问药你瞎忙！药方：生命在于运动！",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/20141010112432880.png",  
         "http://p24gbm5uc.bkt.clouddn.com/u=3970634207,1852805670&fm=27&gp=0.jpg", 
@@ -601,6 +629,7 @@ export default [
 {
     id: uuid.v4(),
     description: "中国首席高球俱乐部",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/20141010112427715.jpg", 
         "http://p24gbm5uc.bkt.clouddn.com/%E4%B8%8B%E8%BD%BD.jpg",
@@ -622,6 +651,7 @@ export default [
 {
     id: uuid.v4(),
     description: " 爱好篮球，要求运动的it人士们",
+    comment: Math.floor(Math.random()*1000),
     img: [
         "http://p24gbm5uc.bkt.clouddn.com/20141010112434802.jpg", 
         "http://p24gbm5uc.bkt.clouddn.com/t1t201507-2865636a5b1f4d798435ed6f9a01546e.jpeg", 
