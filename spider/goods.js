@@ -107,7 +107,7 @@ export default [
 {
     id: uuid.v4(),
     name: "锋卫 Adidas NMD R1 Boost樱花粉 女神粉白粉皇家蓝BY9952/BY9951",
-    img: "",
+    img: "http://p24gv1o5j.bkt.clouddn.com/TB26TctgGmgSKJjSspiXXXyJFXa_%21%2187948303.jpg",
     ori_price: Math.floor(Math.random()*1000 + 500),
     dis_price: Math.floor(Math.random()*500),
     free_post: true,

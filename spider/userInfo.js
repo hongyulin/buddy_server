@@ -10,7 +10,7 @@ export default [
     shop_car_new: 0,
     shop_ticker_new: 0,
     shop_record_new: 0,
-    badge: 0,
+    badge: 0, 
     trends_new: 0,
     join_time: (new Date()).toISOString(),
     info: {
