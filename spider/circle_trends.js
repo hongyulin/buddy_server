@@ -83,7 +83,7 @@ export default [
     address: "上海张江",
     longitude: "",
     latitude: "",
-    header_img: "",
+    header_img: "http://p24g7dbyx.bkt.clouddn.com/263e880c.jpg",
     name: "大哥布鲁",
     circle_name: "游泳圈",
     likes: Math.floor(Math.random()*50),
