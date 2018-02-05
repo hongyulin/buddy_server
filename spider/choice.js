@@ -187,7 +187,7 @@ export default [
 {
     id: uuid.v4(),
     name: "退场的回忆",
-    img: "",
+    img: "http://p24gzlhkm.bkt.clouddn.com/p36vSRtl-kNdI-3sAK-zg3O-KEcZbdGXT5Uf%20%281%29.jpg",
     header_img: "http://p24g7dbyx.bkt.clouddn.com/2444c136.jpg",
     description: "什么是梦想？梦想就是在任何时候你都不会停下对它的追求！如果你放弃了、那只能说明你只是想想而已！",
     likes: 11,
@@ -219,7 +219,7 @@ export default [
 {
     id: uuid.v4(),
     name: "健身的壮壮哥",
-    img: "",
+    img: "http://p24gzlhkm.bkt.clouddn.com/d9c4b74543a98226d2f1b1708882b9014a90ebb1.jpg",
     header_img: "http://p24g7dbyx.bkt.clouddn.com/1220323e.jpg",
     description: "成功要想走捷径、那你就得就99%的人没有的毅力、付出99%的人都付出不了的努力！",
     likes: 24,

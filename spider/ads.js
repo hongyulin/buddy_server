@@ -102,4 +102,16 @@ export default [
     type:"ACTIVE",
     img:"http://p26ckbljr.bkt.clouddn.com/539c4394a72ecc5b194a276a23eec413.webp"
 },
+{
+    id: uuid.v4(),
+    type:"JAZZ",
+    img:"http://p26ckbljr.bkt.clouddn.com/2973813_hzzo4dhw.jpeg"
+},
+{
+    id: uuid.v4(),
+    type:"CHIOCE_VIDEO_PARTY2",
+    img:"http://p26ckbljr.bkt.clouddn.com/138712551.jpg"
+},
+
+
 ]
