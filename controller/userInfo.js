@@ -105,6 +105,7 @@ class UserInfo extends CommonFn {
 
     async recentExercise(req, res, next){
         const {pageIndex, pageSize} = req.query;
+        console.log(pageSize,pageIndex);
     	const skips = (pageIndex -1)*pageSize;
 		if(pageIndex < 0 || pageSize < 0){
 			res.send({
