@@ -4,8 +4,9 @@
   "author": "levinson",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=development node index.js",
-    "initData": "node ./spider/index.js"
+    "start": "cross-env NODE_ENV=development pm2 start index.js --name 'yeah-buddy'",
+    "initData": "node ./spider/index.js",
+    "stop": "cross-env NODE_ENV=production pm2 stop index.js --name 'yeah-buddy'",
   },
   "dependencies": {
     "babel": "^6.23.0",
